@@ -1,0 +1,20 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Charles Vincent
+	email = cjmvincent@outlook.com
+	username = cjmvincent
+
+[github]
+	user = cjmvincent
+
+[web]
+	browser = safari
+
+[init]
+	defaultBranch = master 
+[safe]
+	directory = /private/etc/ansible
