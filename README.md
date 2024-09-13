@@ -1,6 +1,4 @@
-# dotfiles
-
-My OSX / Ubuntu dotfiles.
+<p align="center"><img src="./preview.png"></p>
 
 ## About this project
 
