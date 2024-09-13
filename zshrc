@@ -58,7 +58,7 @@ alias ..="cd ../.."
 alias ...="cd ../../.."
 
 # Make ls do some convenient things
-alias ls='ls -laG'
+alias ls='lsd -a'
 
 # Confirm before overwriting files
 alias cp='cp -i'
