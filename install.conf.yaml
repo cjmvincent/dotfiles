@@ -18,5 +18,8 @@
     ~/.config/skhd:
         path: config/skhd/
         create: true
+    ~/.config/lsd:
+        path: config/lsd/
+        create: true
 
 
