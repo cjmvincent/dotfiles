@@ -60,6 +60,9 @@ alias ...="cd ../../.."
 # Make ls do some convenient things
 alias ls='lsd -a'
 
+# Make cat be pretty
+alias cat="bat"
+
 # Confirm before overwriting files
 alias cp='cp -i'
 
