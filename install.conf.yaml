@@ -21,5 +21,8 @@
     ~/.config/lsd:
         path: config/lsd/
         create: true
+    ~/.config/yabai:
+        path: config/yabai/
+        create: true
 
 

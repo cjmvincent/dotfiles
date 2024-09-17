@@ -17,3 +17,6 @@ hyper - m : open -na /System/Applications/'Mission Control.app'
 
 ## Open new Finder window
 hyper - f : open -na Finder
+
+## Maximize window size
+hyper - 1 : yabai -m window --toggle zoom-fullscreen
