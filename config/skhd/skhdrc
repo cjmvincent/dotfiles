@@ -13,7 +13,7 @@ hyper - l : open -na /System/Applications/Launchpad.app
 ## Open Mission Control
 hyper - m : open -na /System/Applications/'Mission Control.app'
 ## Open new Finder window
-hyper - f : open -na Finder
+hyper - f : open -D "$HOME/Documents"
 
 
 # ===== Yabai =========================
