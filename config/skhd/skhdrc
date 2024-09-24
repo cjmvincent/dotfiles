@@ -7,13 +7,13 @@
 
 # ===== Launching stuff ===============
 ## Open Terminal
-hyper - t : open -na /System/Applications/Utilities/Terminal.app
+hyper - t : open -na "/System/Applications/Utilities/Terminal.app"
 ## Open Launchpad
-hyper - l : open -na /System/Applications/Launchpad.app
+hyper - l : open "/System/Applications/Launchpad.app"
 ## Open Mission Control
-hyper - m : open -na /System/Applications/'Mission Control.app'
+hyper - m : open "/System/Applications/Mission Control.app"
 ## Open new Finder window
-hyper - f : open -D "$HOME/Documents"
+hyper - f : open -Rn "$HOME/Documents"
 
 
 # ===== Yabai =========================
