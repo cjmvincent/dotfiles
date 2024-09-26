@@ -88,7 +88,7 @@ alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dotfiles="cd ~/.dotfiles"
 alias apps="cd /Applications"
-alias ansible="cd /etc/ansible/"
+#alias ansible="cd /etc/ansible/"
 alias github="cd ~/Documents/GitHub"
 
 # Packages update
