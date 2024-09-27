@@ -46,6 +46,9 @@ source $ZSH/oh-my-zsh.sh
 # Reload zsh
 alias reload-matrix="source ~/.zshrc"
 
+# Load my virtual environment for Ansible
+alias load-ansible="source $HOME/.venv/bin/activate"
+
 # Show current public IP information
 alias whatsmyip="curl https://ipinfo.io"
 
@@ -68,12 +71,13 @@ alias cp='cp -i'
 
 # Shortcut for running Ansible playbooks as sudo
 alias sap="sudo ansible-playbook"
+alias ap="ansible-playbook"
 
 # Shortcut for running Python3
-alias python="python3"
+#alias python="python3"
 
 # Shortcut for running Pip3
-alias pip="pip3"
+#alias pip="pip3"
 
 # Shortcut to run neofetch with custom ascii art
 alias neofetch="neofetch --source ~/.config/neofetch/images/usb.txt"
@@ -110,3 +114,6 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
 	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+
+# Created by `pipx` on 2024-09-26 22:00:26
+export PATH="$PATH:/Users/cvincent/.local/bin"
