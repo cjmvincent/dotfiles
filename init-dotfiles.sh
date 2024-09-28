@@ -192,7 +192,8 @@ paths=('~/.profile'
 	'~/.config/neofetch'
 	'~/.config/karabiner'
 	'~/.config/skhd'
-	'~/.config/lsd')
+	'~/.config/lsd'
+	'~/.config/borders')
 
 setupshell=''
 dotclean=''

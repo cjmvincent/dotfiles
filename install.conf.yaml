@@ -24,5 +24,8 @@
     ~/.config/yabai:
         path: config/yabai/
         create: true
+    ~/.config/borders
+        path: config/borders/
+        create: true
 
 
