@@ -60,8 +60,9 @@ alias .="cd .."
 alias ..="cd ../.."
 alias ...="cd ../../.."
 alias x="exit"
+alias c="clear"
 
-# Git Aliases
+# Git sliases
 alias gadd="git add"
 alias gcommit="git commit"
 alias gpull="git pull"
