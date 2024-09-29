@@ -92,8 +92,9 @@ alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dotfiles="cd ~/.dotfiles"
 alias apps="cd /Applications"
-#alias ansible="cd /etc/ansible/"
+alias netops="cd ~/ansible/"
 alias github="cd ~/Documents/GitHub"
+alias baymax="cd ~/baymax"
 
 # Packages update
 if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
