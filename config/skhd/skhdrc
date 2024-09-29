@@ -7,7 +7,7 @@
 
 # ===== Launching stuff ===============
 ## Open Terminal
-hyper - t : open -na "/System/Applications/Utilities/Terminal.app"
+hyper - t : open -a "/System/Applications/Utilities/Terminal.app"
 ## Open Launchpad
 hyper - l : open "/System/Applications/Launchpad.app"
 ## Open Mission Control
