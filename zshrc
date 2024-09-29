@@ -59,6 +59,14 @@ alias whatsmyspeed="speedtest | grep 'Download\|Upload'"
 alias .="cd .."
 alias ..="cd ../.."
 alias ...="cd ../../.."
+alias x="exit"
+
+# Git Aliases
+alias gadd="git add"
+alias gcommit="git commit"
+alias gpull="git pull"
+alias gpush="git push"
+alias gstatus="git status"
 
 # Make ls do some convenient things
 alias ls='lsd -a'
