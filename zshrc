@@ -22,7 +22,6 @@ COMPLETION_WAITING_DOTS="true"
 if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
 	plugins=(
 		git
-		#tmux
 		zsh-autosuggestions
 		colored-man-pages
 	)
