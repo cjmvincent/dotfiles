@@ -107,10 +107,17 @@ alias baymax="cd ~/baymax"
 
 # Packages update
 if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
-	alias update='brew update && brew upgrade'
+	alias update="
+	echo
+	echo 'Upgrading brew packages...'
+	brew update && brew upgrade
+	echo
+	echo 'Upgrading pipx packages...'
+	pipx upgrade-all
+	"
 fi
 if [ $(uname -s 2> /dev/null) = "Linux" ]; then
-	alias update='sudo apt-get update -y && sudo apt-get upgrade -y'
+	alias update="sudo apt-get update -y && sudo apt-get upgrade -y"
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
