@@ -56,9 +56,13 @@ alias whatsmyip="curl https://ipinfo.io"
 alias whatsmyspeed="speedtest | grep 'Download\|Upload'"
 
 # Navigating directories
-alias .="cd .."
-alias ..="cd ../.."
-alias ...="cd ../../.."
+alias cd=" cd"
+alias .=" cd ..; ls"
+alias ..=" cd ..; cd ..; ls"
+alias ...=" cd ..; cd ..;cd ..; ls"
+alias cd.="."
+alias cd..=".."
+alias cd...="..."
 alias x="exit"
 alias c="clear"
 
@@ -75,8 +79,17 @@ alias ls='lsd -a'
 # Make cat be pretty
 alias cat="bat"
 
+# Make grep pretty
+alias grep="grep --color=auto"
+
 # Confirm before overwriting files
 alias cp='cp -i'
+
+# Shortcuts for Docker
+alias dc="docker-compose"
+
+# Open working directory in vscode
+alias code="code ."
 
 # Shortcut for running Ansible playbooks as sudo
 alias sap="sudo ansible-playbook"
