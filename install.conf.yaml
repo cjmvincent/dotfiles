@@ -26,6 +26,8 @@
         create: true
     ~/.config/borders:
         path: config/borders/
-        create: true
-
+	create: true
+    ~/.config/sketchybar:
+        path: config/sketchybar/
+	create: true
 

@@ -193,7 +193,8 @@ paths=('~/.profile'
 	'~/.config/karabiner'
 	'~/.config/skhd'
 	'~/.config/lsd'
-	'~/.config/borders')
+	'~/.config/borders'
+	'~/.config/sketchybar')
 
 setupshell=''
 dotclean=''
