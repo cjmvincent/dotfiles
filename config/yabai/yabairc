@@ -61,6 +61,9 @@ yabai -m config window_placement second_child
 #yabai -m space 6 --label six
 #yabai -m space 9 --label nine
 
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
 
 # ===== Rules ==================================
 
