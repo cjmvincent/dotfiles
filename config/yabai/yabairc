@@ -5,9 +5,11 @@
 # ===== Loading Scripting Additions ============
 
 # See: https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#macos-big-sur---automatically-load-scripting-addition-on-startup
-#sudo yabai --load-sa
-#yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
 
 # ===== Tiling setting =========================
 
@@ -61,9 +63,7 @@ yabai -m config window_placement second_child
 #yabai -m space 6 --label six
 #yabai -m space 9 --label nine
 
-yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
-yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
-yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
+
 
 # ===== Rules ==================================
 
