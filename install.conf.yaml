@@ -6,7 +6,6 @@
     ~/.nanorc: nanorc
     ~/.p10k.zsh: p10k.zsh
     ~/.tmux.conf: tmux.conf
-#    ~/.zprofile: zprofile
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.config/neofetch:
@@ -24,10 +23,9 @@
     ~/.config/yabai:
         path: config/yabai/
         create: true
+    ~/.config/sketchybar:
+        path: config/sketchybar
+        create: true
     ~/.config/borders:
         path: config/borders/
-	create: true
-    ~/.config/sketchybar:
-        path: config/sketchybar/
-	create: true
-
+        create: true
