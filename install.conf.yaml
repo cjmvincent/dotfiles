@@ -6,7 +6,7 @@
     ~/.nanorc: nanorc
     ~/.p10k.zsh: p10k.zsh
     ~/.tmux.conf: tmux.conf
-    ~/.zprofile: zprofile
+#    ~/.zprofile: zprofile
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.config/neofetch:
