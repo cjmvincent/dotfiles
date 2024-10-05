@@ -16,6 +16,7 @@ ACTIVITY=􀒓
 LOCK=􀒳
 BELL=􀋚
 BELL_DOT=􀝗
+CLIPBOARD=
 
 # Git Icons
 GIT_ISSUE=􀍷
