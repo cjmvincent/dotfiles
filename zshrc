@@ -146,3 +146,5 @@ fi
 
 # Created by `pipx` on 2024-09-26 22:00:26
 export PATH="$PATH:/Users/cvincent/.local/bin"
+
+cbonsai -s 7007 -c "{}" -b 1 -p
