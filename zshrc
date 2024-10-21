@@ -48,6 +48,10 @@ alias reload-matrix="source ~/.zshrc"
 # Load my virtual environment for Ansible
 alias load-ansible="source $HOME/.venv/bin/activate"
 
+# LOL 
+alias pls='sudo'
+alias pls\?='eval "sudo $(fc -ln -1)"'
+
 # Show current public IP information
 alias whatsmyip="curl https://ipinfo.io"
 
@@ -83,6 +87,8 @@ alias grep="grep --color=auto"
 
 # Confirm before overwriting files
 alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
 
 # Shortcuts for Docker
 alias dc="docker-compose"
