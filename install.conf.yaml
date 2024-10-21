@@ -29,3 +29,6 @@
     ~/.config/borders:
         path: config/borders/
         create: true
+    ~/.config/fastfetch:
+        path: config/fastfetch/
+        create: true

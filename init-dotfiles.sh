@@ -189,12 +189,12 @@ paths=('~/.profile'
 	'~/.zshenv'
 	'~/.zshrc'
 	'~/bin'
-	'~/.config/neofetch'
 	'~/.config/karabiner'
 	'~/.config/skhd'
 	'~/.config/lsd'
 	'~/.config/borders'
-	'~/.config/sketchybar')
+	'~/.config/sketchybar'
+        '~/.config/fastfetch)
 
 setupshell=''
 dotclean=''
