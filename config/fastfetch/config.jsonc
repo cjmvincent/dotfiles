@@ -16,7 +16,7 @@
         },
         {
             "type": "custom",
-            "format": "┌──────────────────────   ─────────────────────┐",
+            "format": "┌───────────────────────────────────────────────┐",
             "outputColor": "red"
         },
         {
@@ -106,14 +106,6 @@
             "keyColor": "magenta"
         },
         {
-            "type": "command",
-            "shell": "/bin/sh",
-            "text": "echo 'Powerlevel10k'",
-            "key": "│ ├ Prompt",
-            "keyColor": "magenta",
-            "outputColor": "white"
-        },
-        {
             "type": "terminalfont",
             "key": "│ ├󰛖 Font",
             "keyColor": "magenta"
@@ -126,9 +118,17 @@
         {
             "type": "command",
             "shell": "/bin/sh",
-            "text": "echo 'Power Rangers'",
+            "text": "echo 'Powerlevel10k'",
             "key": "└ └󰉼 Theme",
             "keyColor": "magenta",
+            "outputColor": "white"
+        },
+        {
+            "type": "command",
+            "shell": "/bin/sh",
+            "text": "echo 'cjmvincent'",
+            "key": "  Developer",
+            "keyColor": "black",
             "outputColor": "white"
         },
         {
