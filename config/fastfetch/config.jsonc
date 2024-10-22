@@ -60,17 +60,17 @@
         {
             "type": "os",
             "key": "  OS",
-            "keyColor": "yellow"
+            "keyColor": "black"
         },
         {
             "type": "kernel",
             "key": "│ ├ Kernel",
-            "keyColor": "yellow"
+            "keyColor": "black"
         },
         {
             "type": "packages",
             "key": "└ └󰏖 Packages",
-            "keyColor": "yellow"
+            "keyColor": "black"
         },
         {
             "type": "de",
@@ -128,7 +128,7 @@
             "shell": "/bin/sh",
             "text": "echo 'cjmvincent'",
             "key": "  Developer",
-            "keyColor": "black",
+            "keyColor": "yellow",
             "outputColor": "white"
         },
         {
