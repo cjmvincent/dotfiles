@@ -15,7 +15,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 COMPLETION_WAITING_DOTS="true"
-
+ENABLE_CORRECTION="true"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -154,3 +154,5 @@ fi
 export PATH="$PATH:/Users/cvincent/.local/bin"
 
 cbonsai -s 7007 -c "{}" -b 1 -p
+
+#eval "$(starship init zsh)"
