@@ -106,6 +106,14 @@
             "keyColor": "magenta"
         },
         {
+            "type": "command",
+            "shell": "/bin/sh",
+            "text": "echo 'Powerlevel10k'",
+            "key": "│ ├󰉼 Prompt",
+            "keyColor": "magenta",
+            "outputColor": "white"
+        },
+        {
             "type": "terminalfont",
             "key": "│ ├󰛖 Font",
             "keyColor": "magenta"
@@ -118,7 +126,7 @@
         {
             "type": "command",
             "shell": "/bin/sh",
-            "text": "echo 'Powerlevel10k'",
+            "text": "echo 'Power Rangers'",
             "key": "└ └󰉼 Theme",
             "keyColor": "magenta",
             "outputColor": "white"
@@ -128,6 +136,14 @@
             "shell": "/bin/sh",
             "text": "echo 'cjmvincent'",
             "key": "  Developer",
+            "keyColor": "yellow",
+            "outputColor": "white"
+        },
+        {
+            "type": "command",
+            "shell": "/bin/sh",
+            "text": "echo 'true'",
+            "key": "└ └󰀉 Noob",
             "keyColor": "yellow",
             "outputColor": "white"
         },
