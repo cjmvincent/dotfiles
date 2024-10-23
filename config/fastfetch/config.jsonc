@@ -108,7 +108,7 @@
         {
             "type": "command",
             "shell": "/bin/sh",
-            "text": "echo 'Powerlevel10k'",
+            "text": "echo 'Starship'",
             "key": "│ ├󰉼 Prompt",
             "keyColor": "magenta",
             "outputColor": "white"
