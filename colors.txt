@@ -1,0 +1,9 @@
+bg:#282832 
+black:#333366
+red:#d24f49
+green:#33cc66
+yellow:#ffff00
+blue:#0099cc
+magenta:#ff5fd7
+cyan:9966cc
+white:#ffffff
