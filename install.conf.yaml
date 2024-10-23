@@ -4,7 +4,6 @@
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
     ~/.nanorc: nanorc
-    ~/.p10k.zsh: p10k.zsh
     ~/.tmux.conf: tmux.conf
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
@@ -28,4 +27,7 @@
         create: true
     ~/.config/fastfetch:
         path: config/fastfetch/
+        create: true
+    ~/.config/starship.toml:
+        path: config/starship.toml
         create: true
