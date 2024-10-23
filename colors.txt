@@ -1,9 +1,25 @@
-bg:#282832 
-black:#333366
-red:#d24f49
-green:#33cc66
-yellow:#ffff00
-blue:#0099cc
-magenta:#ff5fd7
-cyan:9966cc
-white:#ffffff
+Power Rangers
+            light & dark
+black       #333366
+red         #d24f49
+green       #33cc66
+yellow      #ffff00
+blue        #0099cc
+magenta     #ff5fd7
+cyan        #9966cc
+white       #ffffff
+foreground  #
+background  #282832 
+
+OneHalfDark
+            light     dark
+black       #383a42   #282c34
+red         #e45649   #e06c75
+green       #50a14f   #98c379
+yellow      #c18401   #e5c07b
+blue        #0184bc   #61afef
+magenta     #a626a4   #c678dd
+cyan        #0997b3   #56b6c2
+white       #fafafa   #dcdfe4
+foreground  #383a42   #dcdfe4
+background  #fafafa   #282c34
