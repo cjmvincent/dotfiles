@@ -1,15 +1,15 @@
 Power Rangers
             light & dark
-black       #333366
-red         #d24f49
-green       #33cc66
-yellow      #ffff00
-blue        #0099cc
-magenta     #ff5fd7
+black       #69697e
+red         #e06c75
+green       #6bca78
+yellow      #feff6e
+blue        #61afef
+magenta     #ff80df
 cyan        #9966cc
 white       #ffffff
 foreground  #
-background  #282832 
+background  #231e31
 
 OneHalfDark
             light     dark
