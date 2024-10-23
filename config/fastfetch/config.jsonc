@@ -12,40 +12,48 @@
         "break",
         {
             "type": "custom",
-            "format": "            {#90}󰀉  {#31}󰀉  {#32}󰀉  {#33}󰀉  {#34}󰀉  {#35}󰀉  {#36}󰀉  {#37}󰀉 "
-        },
-        {
-            "type": "custom",
             "format": "┌───────────────────────────────────────────────┐",
             "outputColor": "red"
         },
         {
             "type": "host",
             "key": "󰇅  PC",
-            "keyColor": "green"
+            "keyColor": "green",
+            "outputColor": "white"
+        },
+        {
+            "type": "command",
+            "shell": "/bin/sh",
+            "text": "hostname -s",
+            "key": "│ ├  Hostname",
+            "keyColor": "green",
+            "outputColor": "white"
         },
         {
             "type": "cpu",
-            "key": "│ ├󰍛 CPU",
+            "key": "│ ├󰍛  CPU",
             "showPeCoreCount": true,
             "format": "{1}",
-            "keyColor": "green"
+            "keyColor": "green",
+            "outputColor": "white"
         },
         {
             "type": "gpu",
-            "key": "│ ├󰍛 GPU",
-            "keyColor": "green"
+            "key": "│ ├󰍛  GPU",
+            "keyColor": "green",
+            "outputColor": "white"
         },
         {
             "type": "memory",
-            "key": "│ ├󰍛 Memory",
-            "keyColor": "green"
+            "key": "│ ├󰍛  Memory",
+            "keyColor": "green",
+            "outputColor": "white"
         },
         {
             "type": "command",
             "shell": "/bin/sh",
             "text": "echo 'Lesovoz'",
-            "key": "│ ├ Keyboard",
+            "key": "│ ├  Keyboard",
             "keyColor": "green",
             "outputColor": "white"
         },
@@ -53,81 +61,91 @@
             "type": "command",
             "shell": "/bin/sh",
             "text": "echo 'ProtoArc EM04'",
-            "key": "└ └󰍽 Mouse",
+            "key": "└ └󰍽  Mouse",
             "keyColor": "green",
             "outputColor": "white"
         },
         {
             "type": "os",
             "key": "  OS",
-            "keyColor": "black"
+            "keyColor": "black",
+            "outputColor": "white"
         },
         {
             "type": "kernel",
-            "key": "│ ├ Kernel",
-            "keyColor": "black"
+            "key": "│ ├  Kernel",
+            "keyColor": "black",
+            "outputColor": "white"
         },
         {
             "type": "packages",
-            "key": "└ └󰏖 Packages",
-            "keyColor": "black"
+            "key": "└ └󰏖  Packages",
+            "keyColor": "black",
+            "outputColor": "white"
         },
         {
             "type": "de",
             "key": "  DE",
-            "keyColor": "blue"
+            "keyColor": "blue",
+            "outputColor": "white"
         },
         {
             "type": "lm",
-           "key": "│ ├ LM",
-            "keyColor": "blue"
+           "key": "│ ├  LM",
+            "keyColor": "blue",
+            "outputColor": "white"
         },
         {
             "type": "command",
             "shell": "/bin/sh",
             "text": "echo 'Yabai'",
-            "key": "│ ├󰧨 WM",
+            "key": "│ ├󰧨  WM",
             "keyColor": "blue",
             "outputColor": "white"
         },
         {
             "type": "wmtheme",
-            "key": "└ └󰉼 Theme",
-            "keyColor": "blue"
+            "key": "└ └󰉼  Theme",
+            "keyColor": "blue",
+            "outputColor": "white"
         },
         {
             "type": "terminal",
             "key": "  Terminal",
-            "keyColor": "magenta"
+            "keyColor": "magenta",
+            "outputColor": "white"
         },
         {
             "type": "shell",
-            "key": "│ ├ Shell",
-            "keyColor": "magenta"
+            "key": "│ ├  Shell",
+            "keyColor": "magenta",
+            "outputColor": "white"
         },
         {
             "type": "command",
             "shell": "/bin/sh",
             "text": "echo 'Starship'",
-            "key": "│ ├󰉼 Prompt",
+            "key": "│ ├󰉼  Prompt",
             "keyColor": "magenta",
             "outputColor": "white"
         },
         {
             "type": "terminalfont",
-            "key": "│ ├󰛖 Font",
-            "keyColor": "magenta"
+            "key": "│ ├󰛖  Font",
+            "keyColor": "magenta",
+            "outputColor": "white"
         },
         {
             "type": "icons",
-            "key": "│ ├󰛖 Icons",
-            "keyColor": "magenta"
+            "key": "│ ├󰛖  Icons",
+            "keyColor": "magenta",
+            "outputColor": "white"
         },
         {
             "type": "command",
             "shell": "/bin/sh",
             "text": "echo 'Power Rangers'",
-            "key": "└ └󰉼 Theme",
+            "key": "└ └󰉼  Theme",
             "keyColor": "magenta",
             "outputColor": "white"
         },
@@ -135,7 +153,7 @@
             "type": "command",
             "shell": "/bin/sh",
             "text": "echo 'cjmvincent'",
-            "key": "  Developer",
+            "key": "  Developer",
             "keyColor": "yellow",
             "outputColor": "white"
         },
@@ -143,7 +161,7 @@
             "type": "command",
             "shell": "/bin/sh",
             "text": "echo 'true'",
-            "key": "└ └󰀉 Noob",
+            "key": "└ └󰀉  Noob",
             "keyColor": "yellow",
             "outputColor": "white"
         },
