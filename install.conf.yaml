@@ -8,9 +8,6 @@
     ~/.tmux.conf: tmux.conf
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
-    ~/.config/neofetch:
-        path: config/neofetch/
-        create: true
     ~/.config/karabiner:
         path: config/karabiner/
         create: true
