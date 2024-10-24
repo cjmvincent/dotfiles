@@ -4,6 +4,7 @@ format = """
 [](surface0)\
 $os\
 $username\
+$hostname\
 [](bg:red fg:surface0)\
 $directory\
 [](fg:red bg:green)\
@@ -71,11 +72,16 @@ style_user = "bg:surface0 fg:text"
 style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
+[hostname]
+ssh_only = false
+format = '[@ $ssh_symbol$hostname ]($style)'
+style = "bg:surface0 fg:text"
+
 [directory]
 style = "fg:mantle bg:red"
 format = "[ $path ]($style)"
 truncation_length = 3
-truncation_symbol = " /"
+truncation_symbol = "  /"
 
 [directory.substitutions]
 "Desktop" = ""
