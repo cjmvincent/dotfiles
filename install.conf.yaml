@@ -28,6 +28,6 @@
     ~/.config/fastfetch:
         path: config/fastfetch/
         create: true
-    ~/.config/starship.toml:
-        path: config/starship.toml
+    ~/.config/starship:
+        path: config/starship/
         create: true

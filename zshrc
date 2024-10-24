@@ -155,4 +155,6 @@ export PATH="$PATH:/Users/cvincent/.local/bin"
 
 cbonsai -s 7007 -c "{}" -b 1 -p
 
+# Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml" 
 eval "$(starship init zsh)"
