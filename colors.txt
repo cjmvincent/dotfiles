@@ -8,7 +8,7 @@ blue        #61afef
 magenta     #ff80df
 cyan        #9966cc
 white       #ffffff
-foreground  #
+foreground  #dbdbdb
 background  #231e31
 
 OneHalfDark
