@@ -2,7 +2,6 @@
 
 format = """
 [](surface0)\
-$os\
 $username\
 $hostname\
 [](bg:red fg:surface0)\
@@ -44,7 +43,7 @@ Ubuntu = "󰕈"
 SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
-Macos = " "
+Macos = ""
 Manjaro = ""
 Linux = "󰌽"
 Gentoo = "󰣨"
@@ -63,11 +62,11 @@ RedHatEnterprise = "󱄛"
 show_always = true
 style_user = "bg:surface0 fg:text"
 style_root = "bg:surface0 fg:text"
-format = '[ $user ]($style)'
+format = '[ $user]($style)'
 
 [hostname]
 ssh_only = false
-format = '[@ $ssh_symbol$hostname ]($style)'
+format = '[@$ssh_symbol$hostname ]($style)'
 style = "bg:surface0 fg:text"
 
 [directory]
@@ -77,12 +76,12 @@ truncation_length = 3
 truncation_symbol = "  /"
 
 [directory.substitutions]
-"Desktop" = ""
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
+"Desktop" = "  "
+"Documents" = " 󰈙  "
+"Downloads" = "   "
+"Music" = " 󰝚  "
+"Pictures" = "   "
+"Developer" = " 󰲋  "  
 
 [git_branch]
 symbol = ""
