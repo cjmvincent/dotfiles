@@ -3,6 +3,17 @@
     "logo": {
         "type": "file",
         "source": "~/.config/fastfetch/images/dilbert.txt",
+        "color": {
+            "1": "black",
+            "2": "red",
+            "3": "green",
+            "4": "yellow",
+            "5": "blue",
+            "6": "magenta",
+            "7": "cyan",
+            "8": "white",
+            "9": "default"
+        },
         "padding": {
             "top": 1,
             "left": 2
