@@ -4,7 +4,7 @@ format = """
 [](surface0)\
 $username\
 $hostname\
-[/](bg:surface0 fg:red)\
+[|](bg:surface0 fg:red)\
 $directory\
 [](fg:surface0 bg:background)\
 $fill\
@@ -14,7 +14,7 @@ $git_branch\
 $git_status\
 [/](fg:blue bg:surface0)\
 [/](fg:yellow bg:surface0)\
-[/](fg:blue bg:surface0)\
+[/](fg:cyan bg:surface0)\
 $time\
 [](fg:surface0 bg:background)\
 $line_break$character"""
@@ -97,7 +97,7 @@ format = '[[($all_status$ahead_behind )](fg:green bg:surface0)]($style)'
 disabled = false
 time_format = "%R"
 style = "fg:blue"
-format = '[[   $time ](fg:blue bg:surface0)]($style)'
+format = '[[   $time ](fg:text bg:surface0)]($style)'
 
 [status]
 disabled = false
