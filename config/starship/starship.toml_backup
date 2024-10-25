@@ -4,18 +4,18 @@ format = """
 [](surface0)\
 $username\
 $hostname\
-[/](bg:surface0 fg:red)\
+[](bg:red fg:surface0)\
 $directory\
-[](fg:surface0 bg:background)\
+[](fg:red bg:background)\
 $fill\
-[](fg:surface0 bg:background)\
+[](fg:background bg:green)\
 $git_branch\
 $git_status\
-[/](fg:blue bg:surface0)\
-[/](fg:yellow bg:surface0)\
-[/](fg:pink bg:surface0)\
+[](fg:green bg:blue)\
+[](fg:blue bg:yellow)\
+[](fg:yellow bg:purple)\
 $time\
-[](fg:surface0 bg:background)\
+[ ](fg:purple)\
 $line_break$character"""
 
 palette = 'power_rangers'
@@ -70,7 +70,7 @@ format = '[@$ssh_symbol$hostname ]($style)'
 style = "bg:surface0 fg:text"
 
 [directory]
-style = "fg:red bg:surface0"
+style = "fg:mantle bg:red"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "  /"
@@ -86,11 +86,11 @@ truncation_symbol = "  /"
 [git_branch]
 symbol = ""
 style = "bg:blue"
-format = '[[ $symbol $branch ](fg:green bg:surface0)]($style)'
+format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
 
 [git_status]
 style = "bg:blue"
-format = '[[($all_status$ahead_behind )](fg:green bg:surface0)]($style)'
+format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
 
 [nodejs]
 symbol = ""
@@ -140,13 +140,13 @@ format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
 [docker_context]
 symbol = ""
 style = "bg:mantle"
-format = '[[ $symbol( $context) ](fg:blue bg:surface0)]($style)'
+format = '[[ $symbol( $context) ](fg:#83a598 bg:blue)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:surface0"
-format = '[[   $time ](fg:text bg:surface0)]($style)'
+style = "bg:red"
+format = '[[   $time ](fg:mantle bg:purple)]($style)'
 
 [status]
 disabled = false
