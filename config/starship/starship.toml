@@ -14,7 +14,7 @@ $git_branch\
 $git_status\
 [/](fg:blue bg:surface0)\
 [/](fg:yellow bg:surface0)\
-[/](fg:cyan bg:surface0)\
+[/](fg:pink bg:surface0)\
 $time\
 [](fg:surface0 bg:background)\
 $line_break$character"""
@@ -22,7 +22,7 @@ $line_break$character"""
 palette = 'power_rangers'
 
 [palettes.power_rangers]
-pink = "magenta"
+pink = "#ff80df"
 red = "red"
 yellow = "yellow"
 green = "green"
