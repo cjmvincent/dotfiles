@@ -9,11 +9,12 @@ $directory\
 [](fg:surface0 bg:background)\
 $fill\
 [](fg:surface0 bg:background)\
+[/](bg:surface0 fg:green)\
 $git_branch\
 $git_status\
 [/](fg:blue bg:surface0)\
 [/](fg:yellow bg:surface0)\
-[/](fg:pink bg:surface0)\
+[/](fg:blue bg:surface0)\
 $time\
 [](fg:surface0 bg:background)\
 $line_break$character"""
@@ -92,61 +93,11 @@ format = '[[ $symbol $branch ](fg:green bg:surface0)]($style)'
 style = "bg:blue"
 format = '[[($all_status$ahead_behind )](fg:green bg:surface0)]($style)'
 
-[nodejs]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[c]
-symbol = " "
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[php]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[java]
-symbol = " "
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[kotlin]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[haskell]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[python]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
-
-[docker_context]
-symbol = ""
-style = "bg:mantle"
-format = '[[ $symbol( $context) ](fg:blue bg:surface0)]($style)'
-
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:surface0"
-format = '[[   $time ](fg:text bg:surface0)]($style)'
+style = "fg:blue"
+format = '[[   $time ](fg:blue bg:surface0)]($style)'
 
 [status]
 disabled = false
