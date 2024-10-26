@@ -4,17 +4,17 @@ format = """
 [](surface0)\
 $username\
 $hostname\
-[|](bg:surface0 fg:red)\
+[||](bold bg:surface0 fg:text)\
 $directory\
 [](fg:surface0 bg:background)\
 $fill\
 [](fg:surface0 bg:background)\
-[/](bg:surface0 fg:green)\
+[/](bold bg:surface0 fg:green)\
 $git_branch\
 $git_status\
-[/](fg:blue bg:surface0)\
-[/](fg:yellow bg:surface0)\
-[/](fg:pink bg:surface0)\
+[/](bold fg:blue bg:surface0)\
+[/](bold fg:yellow bg:surface0)\
+[/](bold fg:pink bg:surface0)\
 $time\
 [](fg:surface0 bg:background)\
 $line_break$character"""
