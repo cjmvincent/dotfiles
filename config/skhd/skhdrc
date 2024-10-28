@@ -6,8 +6,8 @@
 
 
 # ===== Launching stuff ===============
-## Open Terminal
-hyper - t : open -a "/System/Applications/Utilities/Terminal.app"
+## Open iTerm2
+hyper - t : open -a "/Applications/iTerm.app"
 ## Open Launchpad
 hyper - l : open "/System/Applications/Launchpad.app"
 ## Open Mission Control
