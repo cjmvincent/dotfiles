@@ -70,6 +70,7 @@ yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Disk Utility$" manage=off
 yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add app="^Path Finder$" manage=off
+yabai -m rule --add app="^TextEdit$" manage=off
 yabai -m rule --add app="^GitHub Desktop$" manage=off
 yabai -m rule --add app="^Messages$" manage=off
 yabai -m rule --add app="^Windows App$" manage=off
