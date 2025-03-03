@@ -60,7 +60,7 @@ alias pls\?='eval "sudo $(fc -ln -1)"'
 alias whatsmyip="curl https://ipinfo.io"
 
 # Test network speed with speediest-cli, but grep the stuff I actually want
-alias whatsmyspeed="speedtest | grep 'Download\|Upload'"
+alias whatsmyspeed="speedtest --secure | grep 'Download\|Upload'"
 
 # Navigating directories
 alias cd=" cd"
