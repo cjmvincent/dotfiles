@@ -6,6 +6,10 @@
 
 
 # ===== Launching stuff ===============
+## Master workflow for work
+hyper - enter : {
+  exec : "open -a '/Applications/Microsoft Teams.app' && open -a '/Applications/Microsoft Outlook.app'"
+}
 ## Open iTerm2
 hyper - t : open -a "/Applications/iTerm.app"
 ## Open Launchpad
