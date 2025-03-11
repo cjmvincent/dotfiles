@@ -68,10 +68,10 @@ yabai -m rule --add app="^Windows App$" manage=off
 yabai -m rule --add label="Select file to save to" app="^Inkscape$" title="Select file to save to" manage=off
 
 ## these are apps I want to launch to specific displays and spaces
-yabai -m rule --add app="^Outlook$" space=1
-yabai -m rule --add app="^Microsoft Teams$" space=1
-yabai -m rule --add app="^Chrome$" space=4
-yabai -m rule --add app="^VS Code$" space=3
+yabai -m rule --add app="^Outlook$" space=^1
+yabai -m rule --add app="^Teams$" space=^1
+yabai -m rule --add app="^Chrome$" desktop=^4
+yabai -m rule --add app="^Code$" space=^3
 
 #END
 
