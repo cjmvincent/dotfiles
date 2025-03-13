@@ -194,7 +194,8 @@ paths=('~/.profile'
 	'~/.config/lsd'
 	'~/.config/borders'
 	'~/.config/sketchybar'
-        '~/.config/fastfetch)
+	'~/.config/yabai'
+    '~/.config/fastfetch')
 
 setupshell=''
 dotclean=''
