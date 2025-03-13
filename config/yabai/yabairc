@@ -14,44 +14,27 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 ## bsp or float (default: bsp)
 yabai -m config layout bsp
 
-## change gaps surrounding windows
-yabai -m config top_padding 5
-yabai -m config bottom_padding 5
-yabai -m config left_padding 5
-yabai -m config right_padding 5
-yabai -m config window_gap 10
+## window things
+yabai -m config top_padding 5 \
+         config bottom_padding 5 \
+         config left_padding 5 \
+         config right_padding 5 \
+         config window_gap 10 \
+         config auto_balance off \
+         config split_ratio 0.50 \
+         config window_placement second_child \
+         config window_topmost off \
+         config window_shadow float \
+         config window_opacity off \
+         config window_border off
 
 ## mouse things
-yabai -m config focus_follows_mouse on
-## set mouse interaction modifier key (default: fn)
-yabai -m config mouse_modifier alt
-## set modifier + left-click drag to resize window (default: move)
-yabai -m config mouse_action1 move
-## set modifier + right-click drag to resize window (default: resize)
-yabai -m config mouse_action2 resize
-## set drop to either swap or stack
-yabai -m mouse_drop_action stack
+yabai -m config focus_follows_mouse on \
+         mouse_modifier alt \
+         mouse_action1 move \
+         mouse_action2 resize \
+         mouse_drop_action stack 
 
-## window decoration
-yabai -m config window_topmost off
-yabai -m config window_shadow float
-yabai -m config window_opacity off
-#yabai -m config window_opacity_duration 0.00
-#yabai -m config active_window_opacity 1.0
-#yabai -m config normal_window_opacity        0.97
-yabai -m config window_border off
-#yabai -m config window_border on
-#yabai -m config window_border_width 2
-#yabai -m config active_window_border_color 0xFF40FF00
-#yabai -m config normal_window_border_color 0x00FFFFFF
-#yabai -m config insert_feedback_color        0xffd75f5f
-
-## some other settings
-yabai -m config auto_balance off
-yabai -m config split_ratio 0.50
-
-## new window spawns to the right if vertical split, or bottom if horizontal split
-yabai -m config window_placement second_child
 
 # ===== Rules ==================================
 
@@ -68,10 +51,10 @@ yabai -m rule --add app="^Windows App$" manage=off
 yabai -m rule --add label="Select file to save to" app="^Inkscape$" title="Select file to save to" manage=off
 
 ## these are apps I want to launch to specific displays and spaces
-yabai -m rule --add app="^Outlook$" space=^1
-yabai -m rule --add app="^Teams$" space=^1
-yabai -m rule --add app="^Chrome$" desktop=^4
-yabai -m rule --add app="^Code$" space=^3
+yabai -m rule --add app="Outlook" space=^1
+yabai -m rule --add app="Teams" space=^1
+yabai -m rule --add app="Chrome" desktop=^4
+yabai -m rule --add app="Code" space=^3
 
 #END
 
