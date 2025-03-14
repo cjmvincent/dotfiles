@@ -22,8 +22,9 @@ hyper - f : open -R "$HOME/Documents"
 ## Maximize window size
 lalt - f : yabai -m window --toggle zoom-fullscreen
 
-# Float / Unfloat window: lalt - space
-lalt - space : yabai -m window --toggle float
+# Float / Unfloat window and center on screen
+lalt - space : yabai -m window --toggle float \
+               yabai -m window --grid 4:4:1:1:2:2
 
 # Space Navigation (four spaces per display): lalt - {1, 2, 3, 4}
 lalt - 1 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[1] ]] && yabai -m space --focus $SPACES[1]
@@ -35,7 +36,7 @@ lalt - 4 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [
 lalt - h    : yabai -m window --focus west  || yabai -m display --focus west
 lalt - j    : yabai -m window --focus south || yabai -m display --focus south
 lalt - k    : yabai -m window --focus north || yabai -m display --focus north
-lalt - l : yabai -m window --focus east  || yabai -m display --focus east
+lalt - l    : yabai -m window --focus east  || yabai -m display --focus east
 
 # Moving windows between spaces: shift + lalt - {1, 2, 3, 4, p, n } (Assumes 4 Spaces Max per Display)
 shift + lalt - 1 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[1] ]] \
