@@ -26,11 +26,8 @@ lalt - f : yabai -m window --toggle zoom-fullscreen
 lalt - space : yabai -m window --toggle float \
                yabai -m window --grid 4:4:1:1:2:2
 
-# Space Navigation (four spaces per display): lalt - {1, 2, 3, 4}
-lalt - 1 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[1] ]] && yabai -m space --focus $SPACES[1]
-lalt - 2 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[2] ]] && yabai -m space --focus $SPACES[2]
-lalt - 3 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[3] ]] && yabai -m space --focus $SPACES[3]
-lalt - 4 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[4] ]] && yabai -m space --focus $SPACES[4]
+# Equalize size of windows: ctrl + lalt - e
+lalt - e : yabai -m space --balance
 
 # Window Navigation (through display borders): lalt - {h, j, k, l}
 lalt - h    : yabai -m window --focus west  || yabai -m display --focus west
@@ -38,35 +35,14 @@ lalt - j    : yabai -m window --focus south || yabai -m display --focus south
 lalt - k    : yabai -m window --focus north || yabai -m display --focus north
 lalt - l    : yabai -m window --focus east  || yabai -m display --focus east
 
-# Moving windows between spaces: shift + lalt - {1, 2, 3, 4, p, n } (Assumes 4 Spaces Max per Display)
-shift + lalt - 1 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[1] ]] \
-                  && yabai -m window --space $SPACES[1]
-
-shift + lalt - 2 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[2] ]] \
-                  && yabai -m window --space $SPACES[2]
-
-shift + lalt - 3 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[3] ]] \
-                  && yabai -m window --space $SPACES[3]
-
-shift + lalt - 4 : SPACES=($(yabai -m query --displays --display | jq '.spaces[]')) && [[ -n $SPACES[4] ]] \
-                  && yabai -m window --space $SPACES[4]
-
 # Rotate on X and Y Axis
 shift + lalt - x : yabai -m space --mirror x-axis
 shift + lalt - y : yabai -m space --mirror y-axis
 
-# Equalize size of windows: ctrl + lalt - e
-ctrl + lalt - e : yabai -m space --balance
-
 # Resize windows, increase
-#shift + lalt - k : yabai -m window --resize top:0:-20
-#shift + lalt - h : yabai -m window --resize left:-20:0
+shift + lalt - k : yabai -m window --resize top:0:-20
+shift + lalt - h : yabai -m window --resize left:-20:0
 
-* Resize windows, decrease
-#shift + lalt - j : yabai -m window --resize bottom:0:-20
-#shift + lalt - l : yabai -m window --resize right0:20
-
-# Sketchybar stuff
-#lalt - space : yabai -m window --toggle float; sketchybar --trigger window_focus
-#shift + lalt - f : yabai -m window --toggle zoom-fullscreen; sketchybar --trigger window_focus
-#lalt - f : yabai -m window --toggle zoom-parent; sketchybar --trigger window_focus
+# Resize windows, decrease
+shift + lalt - j : yabai -m window --resize bottom:0:-20
+shift + lalt - l : yabai -m window --resize right0:20
