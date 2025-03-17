@@ -7,7 +7,7 @@
 
 # ===== Launching stuff ===============
 ## Master workflow for work
-hyper - c : sh ~/login.sh
+hyper - c : sh ~/.config/skhd/login.sh
 ## Open iTerm2
 hyper - t : open -a "/Applications/iTerm.app"
 ## Open Launchpad
