@@ -16,6 +16,8 @@ hyper - l : open "/System/Applications/Launchpad.app"
 hyper - m : open "/System/Applications/Mission Control.app"
 ## Open new Finder window
 hyper - f : open -R "$HOME/Documents"
+## Toggle Dock
+hyper - d: osascript -e 'tell application "System Events" to keystroke "d" using {command down, option down}'
 
 
 # ===== Yabai =========================
