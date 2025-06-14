@@ -50,7 +50,7 @@ yabai -m config focus_follows_mouse on \
 # ===== Rules ==================================
 
 ## these are apps I just don't want managed by yabai
-yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
+yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advanced)$" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Disk Utility$" manage=off
