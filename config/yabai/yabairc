@@ -52,7 +52,9 @@ yabai -m config focus_follows_mouse on \
 ## these are apps I just don't want managed by yabai
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Disk Utility$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
@@ -70,13 +72,12 @@ yabai -m rule --add label="Select file to save to" app="^Inkscape$" title="Selec
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 
 ## these are apps I want to launch to specific displays and spaces
-#yabai -m rule --add app="Outlook" space=^1
-#yabai -m rule --add app="Teams" space=^1
-#yabai -m rule --add app="Code" space=^2
-#yabai -m rule --add app="Chrome" space=^3
-#yabai -m rule --add app="iTerm" space=^4
-#yabai -m rule --add app="Termius" space=^4
-
-
+## Note to self about grids: <rows>:<cols>:<start-x>:<start-y>:<width>:<height>
+yabai -m rule --add app="Outlook" space=^1 grid=1:3:1:2:1:1
+yabai -m rule --add app="Teams"   space=^1 grid=1:3:3:1:1:1
+yabai -m rule --add app="Code" space=^2
+yabai -m rule --add app="Chrome" space=^3
+yabai -m rule --add app="iTerm" space=^4
+yabai -m rule --add app="Termius" space=^4
 #END
 
