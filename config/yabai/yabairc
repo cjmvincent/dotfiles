@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-#YABAI STUFF
 
 
 # ===== Loading Scripting Additions ============
@@ -10,9 +9,6 @@
 # See: https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#macos-big-sur---automatically-load-scripting-addition-on-startup
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
-#yabai -m signal --add event=display_added action="sleep 2 && $HOME/.dotfiles/yabai/create_spaces.sh"
-#yabai -m signal --add event=display_removed action="sleep 1 && $HOME/.dotfiles/yabai/create_spaces.sh"
-#$HOME/.dotfiles/yabai/create_spaces.sh
 
 # ===== Tiling setting =========================
 
@@ -42,14 +38,10 @@ yabai -m config focus_follows_mouse on \
 
 # ===== Window Management ==================================
 
-# Move space 1, aka comms, to the second display when it's connected
-#yabai -m space 1 --display 2
-#yabai -m display --add 2 --space 1
-
 
 # ===== Rules ==================================
 
-## these are apps I just don't want managed by yabai
+## these are apps or dialogs I just don't want managed by yabai
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advanced)$" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add app="^Finder$" manage=off
@@ -79,5 +71,7 @@ yabai -m rule --add app="Chrome" space=^3
 yabai -m rule --add app="Code" space=^4
 yabai -m rule --add app="iTerm" space=^4
 yabai -m rule --add app="Termius" space=^4
+
+
 #END
 
