@@ -611,7 +611,7 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open '~/Documents'",
+                                "description": "Open '~/'",
                                 "from": {
                                     "key_code": "f",
                                     "modifiers": {
@@ -622,7 +622,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "Open '~/Documents'"
+                                        "shell_command": "Open ~/"
                                     }
                                 ],
                                 "type": "basic"
