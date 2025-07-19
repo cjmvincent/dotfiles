@@ -186,7 +186,7 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "open -a 'Calendar.app'",
+                                "description": "Open -a 'Calendar.app'",
                                 "from": {
                                     "key_code": "c",
                                     "modifiers": {
@@ -210,7 +210,7 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "open -a 'Discord.app'",
+                                "description": "Open -a 'Discord.app'",
                                 "from": {
                                     "key_code": "d",
                                     "modifiers": {
