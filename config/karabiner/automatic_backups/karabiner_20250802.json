@@ -1,23 +1,41 @@
 {
-    "global": { "show_in_menu_bar": false },
+    "global": {
+        "ask_for_confirmation_before_quitting": true,
+        "check_for_updates_on_startup": true,
+        "show_in_menu_bar": false,
+        "show_profile_name_in_menu_bar": false,
+        "unsafe_ui": false
+    },
     "profiles": [
         {
             "complex_modifications": {
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
+                },
                 "rules": [
                     {
                         "description": "Caps Lock → Hyper Key (⌃⌥⇧⌘) (Caps Lock if alone)",
                         "manipulators": [
                             {
-                                "from": { "key_code": "caps_lock" },
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
                                 "to": [
                                     {
                                         "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ]
                                     }
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "hold_down_milliseconds": 100,
                                         "key_code": "caps_lock"
                                     }
                                 ],
@@ -109,7 +127,14 @@
                                 "description": "Toggle Hyper sublayer a",
                                 "from": {
                                     "key_code": "a",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -140,9 +165,17 @@
                                 "description": "Open -a 'Google Chrome.app'",
                                 "from": {
                                     "key_code": "b",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Google Chrome.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -156,9 +189,17 @@
                                 "description": "open -a 'Calendar.app'",
                                 "from": {
                                     "key_code": "c",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Calendar.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Calendar.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -172,9 +213,17 @@
                                 "description": "open -a 'Discord.app'",
                                 "from": {
                                     "key_code": "d",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Discord.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Discord.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -188,9 +237,17 @@
                                 "description": "Open -a 'Microsoft Excel.app'",
                                 "from": {
                                     "key_code": "e",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Microsoft Excel.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Microsoft Excel.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -204,9 +261,17 @@
                                 "description": "Open -a 'Google Chrome.app'",
                                 "from": {
                                     "key_code": "g",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Google Chrome.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -220,9 +285,17 @@
                                 "description": "Open -a 'iTerm.app'",
                                 "from": {
                                     "key_code": "i",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'iTerm.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'iTerm.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -236,9 +309,17 @@
                                 "description": "Open -a 'Mail.app'",
                                 "from": {
                                     "key_code": "m",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Mail.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Mail.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -252,9 +333,17 @@
                                 "description": "Open -a 'Notes.app'",
                                 "from": {
                                     "key_code": "n",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Notes.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Notes.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -268,9 +357,17 @@
                                 "description": "Open -a 'iPhone Mirroring.app'",
                                 "from": {
                                     "key_code": "p",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'iPhone Mirroring.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'iPhone Mirroring.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -284,9 +381,17 @@
                                 "description": "Open -a 'Reminders.app'",
                                 "from": {
                                     "key_code": "r",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Reminders.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Reminders.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -300,9 +405,17 @@
                                 "description": "Open -a 'Safari.app'",
                                 "from": {
                                     "key_code": "s",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Safari.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Safari.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -316,9 +429,17 @@
                                 "description": "Open -a 'Termius.app'",
                                 "from": {
                                     "key_code": "t",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Termius.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Termius.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -332,9 +453,17 @@
                                 "description": "Open -a 'Visual Studio Code.app'",
                                 "from": {
                                     "key_code": "v",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Visual Studio Code.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Visual Studio Code.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -348,9 +477,17 @@
                                 "description": "Open -a 'Windows App.app'",
                                 "from": {
                                     "key_code": "w",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open -a 'Windows App.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Windows App.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -439,7 +576,14 @@
                                 "description": "Toggle Hyper sublayer s",
                                 "from": {
                                     "key_code": "s",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -470,9 +614,17 @@
                                 "description": "Open '~/'",
                                 "from": {
                                     "key_code": "f",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "Open ~/" }],
+                                "to": [
+                                    {
+                                        "shell_command": "Open ~/"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -486,9 +638,17 @@
                                 "description": "Open '/System/Applications/Mission Control.app'",
                                 "from": {
                                     "key_code": "m",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "open '/System/Applications/Mission Control.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Applications/Mission Control.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -502,9 +662,17 @@
                                 "description": "Open '/System/Applications/Launchpad.app'",
                                 "from": {
                                     "key_code": "l",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "Open '/System/Applications/Launchpad.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "Open '/System/Applications/Launchpad.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -518,11 +686,17 @@
                                 "description": "Open Notification Center",
                                 "from": {
                                     "key_code": "n",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": {
                                     "key_code": "n",
-                                    "modifiers": ["fn"]
+                                    "modifiers": [
+                                        "fn"
+                                    ]
                                 },
                                 "type": "basic"
                             }
@@ -607,7 +781,14 @@
                                 "description": "Toggle Hyper sublayer w",
                                 "from": {
                                     "key_code": "w",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -638,9 +819,17 @@
                                 "description": "Equalize Yabai windows",
                                 "from": {
                                     "key_code": "e",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --balance" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --balance"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -654,9 +843,17 @@
                                 "description": "Swap Yabai windows on the X asis",
                                 "from": {
                                     "key_code": "x",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --mirror x-axis" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --mirror x-axis"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -670,9 +867,17 @@
                                 "description": "Swap Yabai windows on the Y asis",
                                 "from": {
                                     "key_code": "y",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --mirror y-axis" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --mirror y-axis"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -686,9 +891,17 @@
                                 "description": "Move back once space in mission control",
                                 "from": {
                                     "key_code": "p",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --focus prev" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --focus prev"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -702,9 +915,17 @@
                                 "description": "Move to the next space in mission control",
                                 "from": {
                                     "key_code": "n",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --focus next" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --focus next"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -718,9 +939,17 @@
                                 "description": "Move to the left window in relation to current focused window",
                                 "from": {
                                     "key_code": "h",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus west // yabai -m display --focus west" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m window --focus west // yabai -m display --focus west"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -734,9 +963,17 @@
                                 "description": "Move to the bottom window in relation to current focused window",
                                 "from": {
                                     "key_code": "j",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus south // yabai -m display --focus south" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m window --focus south // yabai -m display --focus south"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -750,9 +987,17 @@
                                 "description": "Move to the top window in relation to current focused window",
                                 "from": {
                                     "key_code": "k",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus north // yabai -m display --focus north" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m window --focus north // yabai -m display --focus north"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -766,9 +1011,17 @@
                                 "description": "Move to the right window in relation to current focused window",
                                 "from": {
                                     "key_code": "l",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus east // yabai -m display --focus east" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m window --focus east // yabai -m display --focus east"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -782,9 +1035,17 @@
                                 "description": "Toggle floating, and center window",
                                 "from": {
                                     "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["any"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "any"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --toggle float // yabai -m window --grid 4:4:1:1:2:2" }],
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/yabai -m window --toggle float // yabai -m window --grid 4:4:1:1:2:2"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -795,9 +1056,20 @@
                             {
                                 "from": {
                                     "key_code": "h",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "left_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -808,9 +1080,20 @@
                             {
                                 "from": {
                                     "key_code": "j",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "down_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -821,9 +1104,20 @@
                             {
                                 "from": {
                                     "key_code": "k",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "up_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -834,9 +1128,20 @@
                             {
                                 "from": {
                                     "key_code": "l",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "right_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -847,12 +1152,21 @@
                             {
                                 "from": {
                                     "key_code": "f",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
                                         "key_code": "b",
-                                        "modifiers": ["left_control"]
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -873,12 +1187,18 @@
                                 ],
                                 "from": {
                                     "key_code": "return_or_enter",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
                                         "key_code": "o",
-                                        "modifiers": ["right_command"]
+                                        "modifiers": [
+                                            "right_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -899,12 +1219,18 @@
                                 ],
                                 "from": {
                                     "key_code": "delete_forward",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
                                         "key_code": "delete_or_backspace",
-                                        "modifiers": ["left_command"]
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -925,14 +1251,20 @@
                                 "from": {
                                     "key_code": "q",
                                     "modifiers": {
-                                        "mandatory": ["command"],
-                                        "optional": ["caps_lock"]
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
                                     }
                                 },
                                 "to": [
                                     {
                                         "key_code": "q",
-                                        "modifiers": ["left_command"]
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -941,8 +1273,12 @@
                                 "from": {
                                     "key_code": "q",
                                     "modifiers": {
-                                        "mandatory": ["command"],
-                                        "optional": ["caps_lock"]
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
                                     }
                                 },
                                 "to": [
@@ -977,17 +1313,273 @@
                     }
                 ]
             },
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 641,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 641,
+                        "vendor_id": 1452
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 50475,
+                        "vendor_id": 1133
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 50475,
+                        "vendor_id": 1133
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 0,
+                        "vendor_id": 65261
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 0,
+                        "vendor_id": 65261
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                }
+            ],
             "fn_function_keys": [
                 {
-                    "from": { "key_code": "f6" },
-                    "to": [{ "apple_vendor_keyboard_key_code": "launchpad" }]
+                    "from": {
+                        "key_code": "f1"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "display_brightness_decrement"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f2"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "display_brightness_increment"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f3"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_keyboard_key_code": "mission_control"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f4"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_keyboard_key_code": "spotlight"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f5"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "dictation"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f6"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_keyboard_key_code": "launchpad"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f7"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "rewind"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f8"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "play_or_pause"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f9"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "fast_forward"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f10"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "mute"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f11"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "volume_decrement"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f12"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "volume_increment"
+                        }
+                    ]
                 }
             ],
             "name": "Default",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": true,
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
-                "keyboard_type_v2": "ansi"
+                "indicate_sticky_modifier_keys_state": true,
+                "keyboard_type_v2": "ansi",
+                "mouse_key_xy_scale": 100
             }
         }
     ]
