@@ -515,22 +515,6 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open '/System/Applications/Spotlight.app'",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["any"] }
-                                },
-                                "to": [{ "apple_vendor_keyboard_key_code": "spotlight" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_s",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "Open Notification Center",
                                 "from": {
                                     "key_code": "n",
