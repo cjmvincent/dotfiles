@@ -1,0 +1,1010 @@
+{
+    "global": { "show_in_menu_bar": false },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Caps Lock → Hyper Key (⌃⌥⇧⌘) (Caps Lock if alone)",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "caps_lock" },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "hold_down_milliseconds": 100,
+                                        "key_code": "caps_lock"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key sublayer \"a\"",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_c",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_d",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_e",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_f",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_h",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_j",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_k",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_l",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_o",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_r",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_t",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_u",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_v",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "description": "Toggle Hyper sublayer a",
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_sublayer_a",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_sublayer_a",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Google Chrome.app'",
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Google Chrome.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "open -a 'Calendar.app'",
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Calendar.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "open -a 'Discord.app'",
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Discord.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Microsoft Excel.app'",
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Microsoft Excel.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Google Chrome.app'",
+                                "from": {
+                                    "key_code": "g",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Google Chrome.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'iTerm.app'",
+                                "from": {
+                                    "key_code": "i",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'iTerm.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Mail.app'",
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Mail.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Notes.app'",
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Notes.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'iPhone Mirroring.app'",
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'iPhone Mirroring.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Reminders.app'",
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Reminders.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Safari.app'",
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Safari.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Termius.app'",
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Termius.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Visual Studio Code.app'",
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Visual Studio Code.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_a",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Windows App.app'",
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Windows App.app'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key sublayer \"s\"",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_c",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_d",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_e",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_f",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_h",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_j",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_k",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_l",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_o",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_r",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_t",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_u",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_v",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "description": "Toggle Hyper sublayer s",
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_sublayer_s",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_sublayer_s",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open '~/'",
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "Open ~/" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open '/System/Applications/Mission Control.app'",
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Applications/Mission Control.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open '/System/Applications/Launchpad.app'",
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "Open '/System/Applications/Launchpad.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open '/System/Applications/Spotlight.app'",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "apple_vendor_keyboard_key_code": "spotlight" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open Notification Center",
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": {
+                                    "key_code": "n",
+                                    "modifiers": ["fn"]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key sublayer \"w\"",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_c",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_d",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_e",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_f",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_h",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_j",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_k",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_l",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_o",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_r",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_t",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_u",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "hyper_sublayer_v",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "description": "Toggle Hyper sublayer w",
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_sublayer_w",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_sublayer_w",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Equalize Yabai windows",
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --balance" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Swap Yabai windows on the X asis",
+                                "from": {
+                                    "key_code": "x",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --mirror x-axis" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Swap Yabai windows on the Y asis",
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --mirror y-axis" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Move back once space in mission control",
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --focus prev" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Move to the next space in mission control",
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m space --focus next" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Move to the left window in relation to current focused window",
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus west // yabai -m display --focus west" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Move to the bottom window in relation to current focused window",
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus south // yabai -m display --focus south" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Move to the top window in relation to current focused window",
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus north // yabai -m display --focus north" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Move to the right window in relation to current focused window",
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --focus east // yabai -m display --focus east" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_w",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Toggle floating, and center window",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/yabai -m window --toggle float // yabai -m window --grid 4:4:1:1:2:2" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key + h",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [{ "key_code": "left_arrow" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key + j",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [{ "key_code": "down_arrow" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key + k",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [{ "key_code": "up_arrow" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key + l",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [{ "key_code": "right_arrow" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key + f",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_shift", "left_option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "b",
+                                        "modifiers": ["left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Use Return as Open",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.apple.finder"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "return_or_enter",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "o",
+                                        "modifiers": ["right_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Use Delete as Move to Trash",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.apple.finder"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "delete_forward",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Quit application by pressing command-q twice",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "command-q",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": ["command"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": ["command"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "command-q",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_canceled": [
+                                        {
+                                            "set_variable": {
+                                                "name": "command-q",
+                                                "value": 0
+                                            }
+                                        }
+                                    ],
+                                    "to_if_invoked": [
+                                        {
+                                            "set_variable": {
+                                                "name": "command-q",
+                                                "value": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "fn_function_keys": [
+                {
+                    "from": { "key_code": "f6" },
+                    "to": [{ "apple_vendor_keyboard_key_code": "launchpad" }]
+                }
+            ],
+            "name": "Default",
+            "selected": true,
+            "virtual_hid_keyboard": {
+                "country_code": 0,
+                "keyboard_type_v2": "ansi"
+            }
+        }
+    ]
+}
