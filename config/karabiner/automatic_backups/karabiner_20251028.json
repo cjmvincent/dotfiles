@@ -142,12 +142,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Input text",
+                                "description": "Input password",
                                 "from": {
                                     "key_code": "p",
                                     "modifiers": { "mandatory": ["any"] }
                                 },
-                                "to": [{ "shell_command": "echo 'hello'" }],
+                                "to": [{ "shell_command": "/bin/sh ~/Downloads/password.sh" }],
                                 "type": "basic"
                             }
                         ]
@@ -1030,7 +1030,6 @@
                     },
                     {
                         "description": "HRM: Home Row Mods hold a or ; for ⌃, s or l for ⌥, d or k for ⌘, f or j for ⇧",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
