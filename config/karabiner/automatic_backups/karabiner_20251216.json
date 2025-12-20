@@ -1190,7 +1190,6 @@
                     },
                     {
                         "description": "HRM: Home Row Mods hold a or ; for ⌃, s or l for ⌥, d or k for ⌘, f or j for ⇧",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
