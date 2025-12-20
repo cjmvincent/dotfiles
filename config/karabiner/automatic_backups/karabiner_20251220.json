@@ -673,12 +673,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open '/System/Applications/Apps.app'",
+                                "description": "Open '/System/Applications/Launchpad.app'",
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": { "mandatory": ["any"] }
                                 },
-                                "to": [{ "shell_command": "Open '/System/Applications/Apps.app'" }],
+                                "to": [{ "shell_command": "Open '/System/Applications/Launchpad.app'" }],
                                 "type": "basic"
                             },
                             {
