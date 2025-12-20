@@ -985,27 +985,6 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Toggle floating, and center window",
-                                "from": {
-                                    "key_code": "m",
-                                    "modifiers": { "mandatory": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q",
-                                        "modifiers": ["left_command", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_w",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "Restart yabai",
                                 "from": {
                                     "key_code": "r",
