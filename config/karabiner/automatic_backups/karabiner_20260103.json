@@ -210,7 +210,7 @@
                                     "key_code": "a",
                                     "modifiers": { "mandatory": ["any"] }
                                 },
-                                "to": [{ "shell_command": "security find-generic-password -a \"$USER\" -s \"qmk-email\" -w | pbcopy && osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'" }],
+                                "to": [{ "shell_command": "security find-generic-password -a \"$USER\" -s \"my-hotmail\" -w | pbcopy && osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'" }],
                                 "type": "basic"
                             },
                             {
@@ -221,44 +221,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Paste username",
+                                "description": "Paste password",
                                 "from": {
                                     "key_code": "s",
                                     "modifiers": { "mandatory": ["any"] }
                                 },
-                                "to": [{ "shell_command": "security find-generic-password -a \"$USER\" -s \"qmk-username\" -w | pbcopy && osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_m",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Paste password1",
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": { "mandatory": ["any"] }
-                                },
-                                "to": [{ "shell_command": "security find-generic-password -a \"$USER\" -s \"qmk-pw1\" -w | pbcopy && osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_m",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Paste password2",
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": { "mandatory": ["any"] }
-                                },
-                                "to": [{ "shell_command": "security find-generic-password -a \"$USER\" -s \"qmk-pw2\" -w | pbcopy && osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'" }],
+                                "to": [{ "shell_command": "security find-generic-password -a \"$USER\" -s \"my-bryan\" -w | pbcopy && osascript -e 'tell application \"System Events\" to keystroke \"v\" using command down'" }],
                                 "type": "basic"
                             }
                         ]

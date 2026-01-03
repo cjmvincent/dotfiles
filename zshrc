@@ -154,8 +154,14 @@ if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
 	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
+# export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+# export ANSIBLE_PYTHON_INTERPRETER=/usr/bin/python3
+# export no_proxy="*"
+
 # Created by `pipx` on 2024-09-26 22:00:26
-export PATH="$PATH:/Users/cvincent/.local/bin"
+export PATH="/Users/cvincent/.local/bin:${PATH}"
+export PATH="${HOME}/Library/Python/3.12/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 
 cbonsai -s 7007 -c "{}" -b 1 -p
 
