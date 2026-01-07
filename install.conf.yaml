@@ -1,4 +1,14 @@
-- clean: ['~']
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+
+- defaults:
+    link:
+      relink: true
+      create: true
+      force: true
 
 - link:
     ~/.bash_profile: bash_profile
@@ -8,26 +18,29 @@
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.config/karabiner:
-        path: config/karabiner/
+        path: config/karabiner
         create: true
     ~/.config/skhd:
-        path: config/skhd/
+        path: config/skhd
         create: true
     ~/.config/lsd:
-        path: config/lsd/
+        path: config/lsd
         create: true
     ~/.config/yabai:
-        path: config/yabai/
+        path: config/yabai
         create: true
     ~/.config/sketchybar:
         path: config/sketchybar
         create: true
     ~/.config/borders:
-        path: config/borders/
+        path: config/borders
         create: true
     ~/.config/fastfetch:
-        path: config/fastfetch/
+        path: config/fastfetch
         create: true
     ~/.config/starship:
-        path: config/starship/
+        path: config/starship
         create: true
+
+- shell:
+  - [Creating .config directories and symlinks]
