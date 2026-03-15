@@ -41,6 +41,3 @@
     ~/.config/starship:
         path: config/starship
         create: true
-
-- shell:
-  - [Creating .config directories and symlinks]
