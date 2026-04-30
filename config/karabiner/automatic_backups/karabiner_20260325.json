@@ -1045,7 +1045,6 @@
                     },
                     {
                         "description": "Combo ESC",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -1065,7 +1064,6 @@
                     },
                     {
                         "description": "Combo Tab",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -1085,7 +1083,6 @@
                     },
                     {
                         "description": "Combo Backspace",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -1105,7 +1102,6 @@
                     },
                     {
                         "description": "Combo Enter",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
