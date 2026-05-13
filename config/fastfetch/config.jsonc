@@ -71,7 +71,7 @@
         {
             "type": "command",
             "shell": "/bin/sh",
-            "text": "echo 'ProtoArc EM04'",
+            "text": "echo 'Kensington TB800'",
             "key": "└ └󰍽  Mouse",
             "keyColor": "green",
             "outputColor": "white"
