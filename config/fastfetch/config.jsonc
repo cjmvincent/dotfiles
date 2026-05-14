@@ -87,10 +87,16 @@
             "keyColor": "green",
             "outputColor": "white"
         },
+        // {
+        //     "type": "keyboard",
+        //     "key": "│ ├╴   Keyboard",
+        //     "keyColor": "green",
+        //     "outputColor": "white"
+        // },
         {
             "type": "command",
             "shell": "/bin/sh",
-            "text": "echo 'Lesovoz'",
+            "text": "ioreg -p IOUSB -l | grep -o -m1 -i -E 'ballzout|lesovoz|newtype36' || echo 'Built-in Keyboard'",
             "key": "│ ├╴   Keyboard",
             "keyColor": "green",
             "outputColor": "white"
@@ -98,11 +104,17 @@
         {
             "type": "command",
             "shell": "/bin/sh",
-            "text": "echo 'Kensington TB800'",
-            "key": "└ └╴ 󰍽  Mouse",
+            "text": "ioreg -p IOUSB -l | grep -o -m1 -i -E 'expert.?mouse.*tb.?800|kensington*|protoarc.*em.?04' || echo 'Built-in Trackpad'",
+            "key": "│ ├╴ 󰍽  Mouse",
             "keyColor": "green",
             "outputColor": "white"
         },
+        // {
+        //     "type": "mouse",
+        //     "key": "│ ├╴ 󰍽  Mouse",
+        //     "keyColor": "green",
+        //     "outputColor": "white"
+        // },
         {
             "type": "custom",
             "key": " Software",
@@ -229,15 +241,13 @@
             "type": "media",
             "key": "│ ├╴  Playing",
             "keyColor": "magenta",
-            "outputColor": "white",
-            //"format": "\"{1}\" - {#1}{3}{#}"
+            "outputColor": "white"
         },
         {
             "type": "sound",
             "key": "└ └╴ 󰋋 Output",
             "keyColor": "magenta",
-            "outputColor": "white",
-            //"format": "{2:20}{5} {3}"
+            "outputColor": "white"
         },
         {
             "type": "custom",
