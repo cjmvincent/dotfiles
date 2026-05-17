@@ -60,6 +60,7 @@ yabai -m rule --add app="^TextEdit$" manage=off
 yabai -m rule --add app="^GitHub Desktop$" manage=off
 yabai -m rule --add app="^Messages$" manage=off
 yabai -m rule --add app="^Windows App$" manage=off
+yabai -m rule --add app="^iTerm2$" manage=off
 yabai -m rule --add label="Select file to save to" app="^Inkscape$" title="Select file to save to" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 
