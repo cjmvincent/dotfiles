@@ -1,43 +1,53 @@
-# color reference
-# https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
+---
 
+# Morphin Time Color Palette
+# Power Rangers inspired - mapped from VS Code theme
+#
+# Red Ranger:   #F14C4C / #cd3131
+# Blue Ranger:  #2472c8 / #3b8eea
+# Yellow Ranger:#F5F543 / #FEFF6E
+# Green Ranger: #0dbc79 / #23d18b
+# Pink Ranger:  #d670d6
+# Black Ranger: #818181 / #454545
 
-# OG Color Palette
-user: 230
-group: 187
+user: "#d670d6"
+group: "#d670d6"
 permission:
-  read: dark_green
-  write: dark_yellow
-  exec: dark_red
-  exec-sticky: 5
-  no-access: 245
-  octal: 6
-  acl: dark_cyan
-  context: cyan
+  read: "#0dbc79"
+  write: "#F5F543"
+  exec: "#F14C4C"
+  exec-sticky: "#cd3131"
+  no-access: "#454545"
+  octal: "#3b8eea"
+  acl: "#d670d6"
+  context: "#d670d6"
 date:
-  hour-old: 40
-  day-old: 42
-  older: 36
+  hour-old: "#23d18b"
+  day-old: "#0dbc79"
+  older: "#818181"
 size:
-  none: 245
-  small: 229
-  medium: 216
-  large: 172
+  none: "#454545"
+  small: "#0dbc79"
+  medium: "#F5F543"
+  large: "#F14C4C"
 inode:
-  valid: 13
-  invalid: 245
+  valid: "#3b8eea"
+  invalid: "#454545"
 links:
-  valid: 13
-  invalid: 245
-tree-edge: 245
+  valid: "#3b8eea"
+  invalid: "#454545"
+tree-edge: "#818181"
 git-status:
-  default: 245
-  unmodified: 245
-  ignored: 245
-  new-in-index: dark_green
-  new-in-workdir: dark_green
-  typechange: dark_yellow
-  deleted: dark_red
-  renamed: dark_green
-  modified: dark_yellow
-  conflicted: dark_red
+  default: "#818181"
+  unmodified: "#818181"
+  ignored: "#454545"
+  new-in-index: "#23d18b"
+  new-in-workdir: "#0dbc79"
+  typechange: "#F5F543"
+  deleted: "#F14C4C"
+  renamed: "#3b8eea"
+  modified: "#F5F543"
+  conflicted: "#cd3131"
+filetype:
+  dir:
+    foreground: "#2472c8"
