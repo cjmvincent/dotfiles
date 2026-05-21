@@ -1,115 +1,97 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """
-[](surface0)\
-$username\
-$hostname\
-[||](bold bg:surface0 fg:text)\
-$directory\
-[](fg:surface0 bg:background)\
-$fill\
-[](fg:surface0 bg:background)\
-[/](bold bg:surface0 fg:green)\
-$git_branch\
-$git_status\
-[/](bold fg:blue bg:surface0)\
-[/](bold fg:yellow bg:surface0)\
-[/](bold fg:pink bg:surface0)\
-$time\
-[](fg:surface0 bg:background)\
-$line_break$character"""
+add_newline = true
 
-palette = 'power_rangers'
+# A minimal left prompt
+format = """ $directory[❯](black)[❯](yellow)[❯](red)[❯](green)[❯](magenta)[❯](blue)$fill $git_branch$git_status$status$cmd_duration$time$line_break $character"""
 
-[palettes.power_rangers]
-pink = "#ff80df"
-red = "red"
-yellow = "yellow"
-green = "green"
-cyan = "cyan"
-blue = "blue"
-text = "#cdd6f4"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-background = "#231e31"
+# move the rest of the prompt to the right
+# right_format = """ $character$git_branch$git_status$status$cmd_duration$time"""
 
-[os]
-disabled = false
-style = "bg:surface0 fg:text"
-
-[os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = ""
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = "󰣇"
-Artix = "󰣇"
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
+[fill]
+symbol = " "
 
 [username]
 show_always = true
-style_user = "bg:surface0 fg:text"
-style_root = "bg:surface0 fg:text"
-format = '[ $user]($style)'
+format = '[ $user]'
 
 [hostname]
 ssh_only = false
-format = '[@$ssh_symbol$hostname ]($style)'
-style = "bg:surface0 fg:text"
+format = '[@$ssh_symbol$hostname ]'
 
-[directory]
-style = "fg:red bg:surface0"
-format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = "  /"
-
-[directory.substitutions]
-"Desktop" = "  "
-"Documents" = " 󰈙  "
-"Downloads" = "   "
-"Music" = " 󰝚  "
-"Pictures" = "   "
-"Developer" = " 󰲋  "  
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)[❮](yellow)[❮](red)"
 
 [git_branch]
 symbol = ""
-style = "bg:blue"
-format = '[[ $symbol $branch ](fg:green bg:surface0)]($style)'
+format = '[ $symbol $branch]($style) '
+style = 'bold green'
 
 [git_status]
-style = "bg:blue"
-format = '[[($all_status$ahead_behind )](fg:green bg:surface0)]($style)'
+format = '$all_status$ahead_behind '
+ahead = '[⬆](bold purple) '
+behind = '[⬇](bold purple) '
+staged = '[✚](green) '
+deleted = '[✖](red) '
+renamed = '[➜](purple) '
+stashed = '[✭](cyan) '
+untracked = '[◼](white) '
+modified = '[✱](blue) '
+conflicted = '[═](yellow) '
+diverged = '⇕ '
+up_to_date = ''
 
-[time]
-disabled = false
-time_format = "%R"
-style = "fg:blue"
-format = '[[   $time ](fg:text bg:surface0)]($style)'
+[directory]
+style = "blue"
+truncation_length = 1
+truncation_symbol = "  "
+fish_style_pwd_dir_length = 1
 
-[status]
-disabled = false
+[directory.substitutions]
+"Desktop" = "  "
+"Documents" = " 󰈙 "
+"Downloads" = "  "
+"Music" = " 󰝚 "
+"Pictures" = "  "
+"Developer" = " 󰲋 " 
+
+[cmd_duration]
+format = '[$duration]($style) '
 
 [line_break]
 disabled = false
 
-[character]
+[status]
 disabled = false
-success_symbol = '[](bold fg:green)'
-error_symbol = '[](bold fg:red)'
-vimcmd_symbol = '[](bold fg:creen)'
-vimcmd_replace_one_symbol = '[](bold fg:purple)'
-vimcmd_replace_symbol = '[](bold fg:purple)'
-vimcmd_visual_symbol = '[](bold fg:magenta)'
+symbol = '✘ '
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:white"
+format = '[   $time ]($style)'
+
+# Language Support
+[crystal]
+format = "🔮 "
+
+[golang]
+format = "🐭 "
+
+[java]
+format = "🍵 "
+
+[nodejs]
+format = "🍏 "
+detect_folders = [""]
+
+[php]
+format = "🐘 "
+
+[python]
+format = '🐍 [${pyenv_prefix}(${version})(\($virtualenv\))](bold fg:yellow)'
+
+[rust]
+format = "🦀 "
