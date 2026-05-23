@@ -104,7 +104,7 @@
         {
             "type": "command",
             "shell": "/bin/sh",
-            "text": "ioreg -p IOUSB -l | grep -o -m1 -i -E 'expert.?mouse.*tb.?800|kensington*|protoarc.*em.?04' || echo 'Built-in Trackpad'",
+            "text": "ioreg -p IOUSB -l | grep -o -m1 -i -E 'expert.?mouse.*tb.?800|kensington*|protoarc*|ballzout|newtype36' || echo 'Built-in Trackpad'",
             "key": "│ ├╴ 󰍽  Mouse",
             "keyColor": "green",
             "outputColor": "white"
