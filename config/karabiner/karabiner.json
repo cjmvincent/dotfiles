@@ -484,38 +484,6 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'Google Chrome.app'",
-                                "from": {
-                                    "key_code": "b",
-                                    "modifiers": { "mandatory": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Google Chrome.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "open -a 'Calendar.app'",
-                                "from": {
-                                    "key_code": "c",
-                                    "modifiers": { "mandatory": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Calendar.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "open -a 'Discord.app'",
                                 "from": {
                                     "key_code": "d",
@@ -564,12 +532,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'iTerm.app'",
+                                "description": "Open -a 'Karabiner-Elements.app'",
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "k",
                                     "modifiers": { "mandatory": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'iTerm.app'" }],
+                                "to": [{ "shell_command": "open -a 'Karabiner-Elements.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -596,28 +564,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'iPhone Mirroring.app'",
+                                "description": "Open -a 'Microsoft Outlook.app'",
                                 "from": {
-                                    "key_code": "p",
+                                    "key_code": "o",
                                     "modifiers": { "mandatory": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'iPhone Mirroring.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open -a 'Reminders.app'",
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": { "mandatory": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Reminders.app'" }],
+                                "to": [{ "shell_command": "open -a 'Microsoft Outlook.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -798,6 +750,22 @@
                                         "value": 1
                                     }
                                 ],
+                                "description": "open -a 'Calendar.app'",
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Calendar.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "description": "Open '~/'",
                                 "from": {
                                     "key_code": "f",
@@ -871,6 +839,54 @@
                                     "key_code": "n",
                                     "modifiers": ["fn"]
                                 },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'iPhone Mirroring.app'",
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'iPhone Mirroring.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Reminders.app'",
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Reminders.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'iTerm.app'",
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'iTerm.app'" }],
                                 "type": "basic"
                             }
                         ]
