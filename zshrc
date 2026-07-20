@@ -3,9 +3,9 @@ if command -v tmux>/dev/null; then
 fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+#export ZSH="$HOME/.oh-my-zsh"
 # update automatically without asking
-zstyle ':omz:update' mode auto
+#zstyle ':omz:update' mode auto
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -40,7 +40,7 @@ if [ $(uname -s 2> /dev/null) = "Linux" ]; then
 fi
 
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 
 # User configuration
@@ -104,15 +104,6 @@ alias code="code ."
 alias sap="sudo ansible-playbook"
 alias ap="ansible-playbook"
 
-# Shortcut for running Python3
-#alias python="python3"
-
-# Shortcut for running Pip3
-#alias pip="pip3"
-
-# Shortcut to run neofetch with custom ascii art
-alias neofetch="neofetch --source ~/.config/neofetch/images/usb.txt"
-
 # Ping, but gotta go fash
 alias fastping='ping -c 4 -s 2'
 
@@ -134,8 +125,8 @@ if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
 	echo 'Upgrading brew packages...'
 	brew update && brew upgrade
 	echo
-	echo 'Upgrading pipx packages...'
-	pipx upgrade-all
+	echo 'Upgrading pythong packages...'
+	pip freeze > requirements.txt && pip install -r requirements.txt --upgrade; rm -f requirements.txt
 	"
 fi
 if [ $(uname -s 2> /dev/null) = "Linux" ]; then
@@ -143,7 +134,7 @@ if [ $(uname -s 2> /dev/null) = "Linux" ]; then
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
@@ -154,16 +145,12 @@ if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
 	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
-# export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-# export ANSIBLE_PYTHON_INTERPRETER=/usr/bin/python3
-# export no_proxy="*"
-
 # Created by `pipx` on 2024-09-26 22:00:26
-export PATH="/Users/cvincent/.local/bin:${PATH}"
-export PATH="${HOME}/Library/Python/3.12/bin:${PATH}"
-export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
+#export PATH="/Users/cvincent/.local/bin:${PATH}"
+#export PATH="${HOME}/Library/Python/3.12/bin:${PATH}"
+#export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 
-cbonsai -s 7007 -c "{}" -b 1 -p
+#cbonsai -s 7007 -c "{}" -b 1 -p
 
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml" 
