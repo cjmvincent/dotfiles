@@ -1,18 +1,20 @@
-if command -v tmux>/dev/null; then
- [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux
-fi
+#if command -v tmux>/dev/null; then
+# [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux
+#fi
 
 # Path to your oh-my-zsh installation.
 #export ZSH="$HOME/.oh-my-zsh"
 # update automatically without asking
 #zstyle ':omz:update' mode auto
+#source $ZSH/oh-my-zsh.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="powerlevel10k/powerlevel10k"
-
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -38,10 +40,6 @@ if [ $(uname -s 2> /dev/null) = "Linux" ]; then
 		zsh-syntax-highlighting
 	)
 fi
-
-
-#source $ZSH/oh-my-zsh.sh
-
 
 # User configuration
 
@@ -132,10 +130,6 @@ fi
 if [ $(uname -s 2> /dev/null) = "Linux" ]; then
 	alias update="sudo apt-get update -y && sudo apt-get upgrade -y"
 fi
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
