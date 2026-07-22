@@ -6,7 +6,6 @@
                 "rules": [
                     {
                         "description": "z and / -> Hyper Key (Control+Option+Shift+Command) if held, normal key if alone (built-in keyboard only)",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1316,7 +1315,6 @@
                     },
                     {
                         "description": "HRM: Home Row Mods hold a or ; for ⌃, s or l for ⌥, d or k for ⌘, f or j for ⇧",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
