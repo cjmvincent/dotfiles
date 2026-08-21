@@ -195,7 +195,8 @@ paths=('~/.profile'
 	'~/.config/borders'
 	'~/.config/sketchybar'
 	'~/.config/yabai'
-    '~/.config/fastfetch')
+    '~/.config/fastfetch'
+	'~/.config/nvim')
 
 setupshell=''
 dotclean=''
