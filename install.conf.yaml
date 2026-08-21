@@ -13,8 +13,6 @@
 - link:
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
-    ~/.nanorc: nanorc
-    ~/.tmux.conf: tmux.conf
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.config/karabiner:
@@ -43,4 +41,10 @@
         create: true
     ~/.config/nvim:
         path: config/nvim
+        create: true
+    ~/.config/tmux:
+        path: config/tmux
+        create: true
+    ~/.config/nano:
+        path: config/nano
         create: true
