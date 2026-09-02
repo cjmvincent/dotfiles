@@ -23,6 +23,9 @@
 COMPLETION_WAITING_DOTS="true"
 ENABLE_CORRECTION="true"
 
+# Change default editor, useful for Yazi, my terminal file manager
+export EDITOR=nvim
+
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
@@ -147,5 +150,17 @@ fi
 #cbonsai -s 7007 -c "{}" -b 1 -p
 
 # Starship
-export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml" 
+export STARSHIP_CONFIG="$HOME/.dotfiles/config/starship/starship.toml" 
 eval "$(starship init zsh)"
+
+# Yazi
+export YAZI_CONFIG_HOME="$HOME/.config/yazi"
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
