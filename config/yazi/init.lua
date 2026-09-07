@@ -4,6 +4,6 @@ require("starship"):setup({
 
 require("no-status"):setup()
 
-require("no-header"):setup()
+-- require("no-header"):setup()
 
 ya.err(os.getenv("PATH"))
