@@ -247,11 +247,12 @@ rules = [
 	{ url = "*/", is = "dummy", bg = "red" },
 	# Fallback
 	{ url = "*", fg = "white" },
-	{ url = "*/", fg = "blue" }
+	{ url = "*/", fg = "lightblue" }
 ]
 
 # : }}}
 
+# : Icon styles {{{
 
 [icon]
 
@@ -283,8 +284,8 @@ conds = [
 	{ if = "dummy", text = "", fg = "#ff5555" },
 
 	# Fallback
-	{ if = "dir & hovered", text = "", fg = "#bd93f9" },
-	{ if = "dir", text = "", fg = "#bd93f9" },
+	{ if = "dir & hovered", text = "", fg = "#8be9fd" },
+	{ if = "dir", text = "", fg = "#8be9fd" },
 	{ if = "exec", text = "", fg = "#50fa7b" },
 	{ if = "!dir", text = "", fg = "#888888" },
 ]
@@ -775,3 +776,5 @@ exts = [
 	{ name = "zst", text = "", fg = "#eca517" },
 	{ name = "🔥", text = "", fg = "#ff4c1f" },
 ]
+
+# : }}}
