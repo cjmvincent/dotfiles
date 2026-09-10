@@ -1118,7 +1118,7 @@
 			<key>Normal Font</key>
 			<string>SpaceMonoNF 11</string>
 			<key>Only The Default BG Color Uses Transparency</key>
-			<false/>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Place Prompt at First Column</key>
