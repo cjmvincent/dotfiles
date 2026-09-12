@@ -39,7 +39,7 @@ set -g status-left-style NONE
 set -g status-right-style NONE
 
 set -g status-left "#{tmux_mode_indicator} "
-set -g status-right "#[fg=#{@backg},bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#{@backg}]#[fg=#3b4261,bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#3b4261]#{speedtest_result} #[fg=#{@accent},bg=#3b4261,nobold,nounderscore,noitalics]#[fg=#1b1d2b,bg=#{@accent},bold] #[bg=blue]#U#[bg=blue]@#H#{?#{pane_ssh_port},:#{pane_ssh_port},} "
+set -g status-right "#[fg=#{@backg},bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#{@backg}]#[fg=#3b4261,bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#3b4261] #{speedtest_result}  #[fg=#{@blue},bg=#3b4261,nobold,nounderscore,noitalics]#[fg=#{@accent},bg=#3b4261,nobold,nounderscore,noitalics]#[fg=#1b1d2b,bg=#{@accent},bold] #[bg=blue]#U#[bg=blue]@#H#{?#{pane_ssh_port},:#{pane_ssh_port},} "
 
 
 setw -g window-status-activity-style "underscore,fg=#828bb8,bg=#{@backg}"
