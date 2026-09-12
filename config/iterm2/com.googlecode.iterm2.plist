@@ -34,6 +34,8 @@
 	<string>20BE4E3B-B75C-4075-A190-8DF4A0785581</string>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DisableWindowSizeSnap</key>
+	<false/>
 	<key>EnableDivisionView</key>
 	<true/>
 	<key>HapticFeedbackForEsc</key>
@@ -766,7 +768,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>49.573994348404256</real>
+			<real>10</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2566,6 +2568,8 @@
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>TerminalVMargin</key>
+	<integer>4</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
