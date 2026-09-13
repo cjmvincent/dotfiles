@@ -12,7 +12,7 @@ set -g @white "#f8f8f2"
 set -g @black "#282a36"
 set -g @lightgray "#666666"
 set -g @gray "#282a36"
-set -g @backg "#161618"
+set -g @backg "#282a36"
 set -g @accent "blue"
 
 set -g mode-style "fg=#82aaff,bg=#3b4261"
