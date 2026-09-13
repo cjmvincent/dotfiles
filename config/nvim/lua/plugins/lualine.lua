@@ -6,6 +6,10 @@ return {
       options = {
         theme = "command_center",
         icons_enabled = true,
+        -- Section separators divide major block shifts (A to B, B to C)
+        section_separators = { left = '', right = '' },
+        -- Component separators divide items inside the same block
+        component_separators = { left = '', right = '' },
       },
       sections = {
         lualine_a = {'mode'},
