@@ -354,6 +354,22 @@
                                         "value": 1
                                     }
                                 ],
+                                "description": "Run launch script to open apps",
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["any"] }
+                                },
+                                "to": [{ "shell_command": "/bin/bash ~/.config/skhd/login.sh" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_m",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "description": "Paste email",
                                 "from": {
                                     "key_code": "a",
