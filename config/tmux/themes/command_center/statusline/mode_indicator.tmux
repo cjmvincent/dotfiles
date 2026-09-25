@@ -22,4 +22,4 @@ set -g @mode_indicator_copy_mode_style 'bg=#{@green},fg=#{@black}'
 set -g @mode_indicator_sync_mode_style 'bg=#{@pink},fg=#{@black}'
 
 # style values for empty prompt
-set -g @mode_indicator_empty_mode_style 'bg=#{@blue},fg=#{@black}'
+set -g @mode_indicator_empty_mode_style 'bg=#{@lightgray},fg=#{@black}'
