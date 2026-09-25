@@ -13,13 +13,13 @@ set -g @mode_indicator_sync_prompt ' SYNC '
 set -g @mode_indicator_empty_prompt ' TMUX '
 
 # style values for prefix prompt
-set -g @mode_indicator_prefix_mode_style 'bg=#{@yellow},fg=#{@black}'
+set -g @mode_indicator_prefix_mode_style 'bg=#{@yellow},fg=#{@gray}'
 
 # style values for copy prompt
-set -g @mode_indicator_copy_mode_style 'bg=#{@green},fg=#{@black}'
+set -g @mode_indicator_copy_mode_style 'bg=#{@green},fg=#{@gray}'
 
 # style values for sync prompt
-set -g @mode_indicator_sync_mode_style 'bg=#{@pink},fg=#{@black}'
+set -g @mode_indicator_sync_mode_style 'bg=#{@pink},fg=#{@gray}'
 
 # style values for empty prompt
-set -g @mode_indicator_empty_mode_style 'bg=#{@lightgray},fg=#{@black}'
+set -g @mode_indicator_empty_mode_style 'bg=#{@gray},fg=#{@white}'

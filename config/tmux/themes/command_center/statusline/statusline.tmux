@@ -30,7 +30,7 @@ source-file $HOME/.config/tmux/themes/command_center/statusline/speedtest.tmux
 set -g status "on"
 set -g status-justify "right"
 
-set -g status-style "fg=#82aaff,bg=default"
+set -g status-style "fg=#82aaff,bg=#{@gray}"
 
 set -g status-left-length "100"
 set -g status-right-length "100"
@@ -38,9 +38,9 @@ set -g status-right-length "100"
 set -g status-left-style NONE
 set -g status-right-style NONE
 
-set -g status-left "#{tmux_mode_indicator} "
+set -g status-left "#{tmux_mode_indicator}|"
 #set -g status-right "#[fg=#{@backg},bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#{@backg}]#[fg=#3b4261,bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#3b4261]#{speedtest_result}  #[fg=#{@blue},bg=#3b4261,nobold,nounderscore,noitalics] #[fg=#{@accent},bg=#3b4261,nobold,nounderscore,noitalics]#[fg=#1b1d2b,bg=#{@accent},bold] #[bg=blue]#U#[bg=blue]@#H#{?#{pane_ssh_port},:#{pane_ssh_port},} "
-set -g status-right "#[fg=#{@backg},bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#{@backg}]#[fg=#3b4261,bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#{@lightgray}] #{speedtest_result} #[fg=white,bg=#{@accent},bold] #U#@#H#{?#{pane_ssh_port},:#{pane_ssh_port},} "
+set -g status-right "#[fg=#{@backg},bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#{@backg}]#[fg=#3b4261,bg=#{@backg},nobold,nounderscore,noitalics]#[fg=#82aaff,bg=#{@gray}] #{speedtest_result} #[fg=white,bg=#{@accent},bold] #U#@#H#{?#{pane_ssh_port},:#{pane_ssh_port},} "
 
 
 
