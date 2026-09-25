@@ -1,5 +1,5 @@
 # Run a test when tmux starts (default: off)
-set -g @speedtest_run_on_start 'off'
+set -g @speedtest_run_on_start 'on'
 
 # Key binding (default: o)
 set -g @speedtest_key 'o'
