@@ -30,7 +30,7 @@ source-file $HOME/.config/tmux/themes/command_center/statusline/speedtest.tmux
 set -g status "on"
 set -g status-justify "right"
 
-set -g status-style "fg=#82aaff,bg=#{@backg}"
+set -g status-style "fg=#82aaff,bg=default"
 
 set -g status-left-length "100"
 set -g status-right-length "100"
