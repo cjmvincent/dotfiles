@@ -7,6 +7,6 @@ open -na "/Applications/Microsoft Teams.app"
 sleep 5
 open -na "/Applications/Google Chrome.app"
 sleep 5
-open -na "/Applications/Visual Studio Code.app"
+open -na "/Applications/iTerm.app"
 sleep 5
-open -na "/Applications/Microsoft OneNote.app"
+open -na "/Applications/Termius.app"
