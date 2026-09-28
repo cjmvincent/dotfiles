@@ -108,6 +108,9 @@ alias ap="ansible-playbook"
 # Ping, but gotta go fash
 alias fastping='ping -c 4 -s 2'
 
+# Show LLDP neighhbor, requires lldpcli to be installed
+alias lldp="sudo lldpcli show neighbors"
+
 # Move between directories
 alias home="cd ~"
 alias dt="cd ~/Desktop"
