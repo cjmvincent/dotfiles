@@ -17,8 +17,8 @@ set -g @accent "blue"
 
 set -g mode-style "fg=#82aaff,bg=#3b4261"
 
-set -g message-style "fg=#82aaff,bg=#3b4261"
-set -g message-command-style "fg=#82aaff,bg=#3b4261"
+set -g message-style "fg=#{@white},bg=#{@backg}"
+set -g message-command-style "fg=#{@white},bg=#{@backg}"
 
 set -g pane-border-style "fg=#3b4261"
 set -g pane-active-border-style "fg=#82aaff"

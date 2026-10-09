@@ -18,7 +18,7 @@ set -g @speedtest_icon_running '⏳'
 
 # Icon shown when no result yet (default: —)
 # Set to "" (empty string) to auto-hide the plugin when idle
-set -g @speedtest_icon_idle '󰊚'
+set -g @speedtest_icon_idle '󰊚 '
 
 # Timeout in seconds for each test (default: 120)
 set -g @speedtest_timeout '120'
