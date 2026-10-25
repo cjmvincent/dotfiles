@@ -167,3 +167,6 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Created by `pipx` on 2026-10-12 23:24:23
+export PATH="$PATH:/Users/cvincent/.local/bin"
