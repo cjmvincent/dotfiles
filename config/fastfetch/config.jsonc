@@ -3,8 +3,8 @@
     "logo": {
         "type": "iterm",
         "source": "~/.config/fastfetch/images/hiroandbaymax.png",
-        "width": 36,
-        "height": 23,
+        "width": 30,
+        "height": 18,
         "preserveAspectRatio": true,
         "color": {
             "1": "black",
