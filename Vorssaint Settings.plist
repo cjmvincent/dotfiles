@@ -74,7 +74,7 @@
 		<key>cleanerScreenshotAgeDays</key>
 		<integer>30</integer>
 		<key>cleaningModeKeepScreenVisible</key>
-		<false/>
+		<true/>
 		<key>clipboardAutoClearDelaySeconds</key>
 		<integer>20</integer>
 		<key>clipboardAutoClearOnDelay</key>
@@ -316,7 +316,7 @@
 		<key>featureAvailable.screenRecorder</key>
 		<false/>
 		<key>featureAvailable.screenshot</key>
-		<false/>
+		<true/>
 		<key>featureAvailable.scrollHorizontal</key>
 		<false/>
 		<key>featureAvailable.scrollInverter</key>
@@ -818,7 +818,7 @@
 		<key>notchCustomHeight</key>
 		<real>260</real>
 		<key>notchCustomWidth</key>
-		<real>360</real>
+		<real>600</real>
 		<key>notchDismissNativeNotifications</key>
 		<false/>
 		<key>notchDisplay</key>
@@ -834,7 +834,7 @@
 		<key>notchHapticFeedback</key>
 		<true/>
 		<key>notchHiddenControls</key>
-		<string>keyboardLight,microphone,screenshot,recording,speedTest,panel,commandBar,scratchpad</string>
+		<string>calendar,commandBar,keepAwake,keyboardLight,microphone,panel,recording,scratchpad,screenshot,speedTest,timer</string>
 		<key>notchHiddenModules</key>
 		<string>captures,notifications,watch</string>
 		<key>notchHiddenShowsActivity</key>
@@ -874,9 +874,9 @@
 		<key>notchLiveEqualizer</key>
 		<false/>
 		<key>notchLockScreen</key>
-		<false/>
+		<true/>
 		<key>notchLockSounds</key>
-		<false/>
+		<true/>
 		<key>notchLowBatteryEarly</key>
 		<false/>
 		<key>notchLowBatteryEarlyThreshold</key>
@@ -945,18 +945,16 @@
 		QUVENTE3LTNGMDktNDJBOS04MDRBLTA5RDcyMjUwODhGOSIsImxhYmVsIjoi
 		Iiwic2lkZSI6ImxlZnQifSx7ImFjdGlvbklEIjoiZXhwbG9yZSIsImlkIjoi
 		MDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwibGFiZWwi
-		OiIiLCJzaWRlIjoibGVmdCJ9LHsiYWN0aW9uSUQiOiJjb250cm9scyIsImlk
-		IjoiQ0I3NTQxRDYtMzQ4Mi00RDc4LTkxOUMtNjBCNTA3RUZFNDE5IiwibGFi
-		ZWwiOiIiLCJzaWRlIjoibGVmdCJ9LHsiYWN0aW9uSUQiOiJzeXN0ZW0iLCJp
-		ZCI6IkM2MTFEQTMyLUFDMDktNENGOC05QUFGLTAxQjI0MEZGNTIxOCIsImxh
-		YmVsIjoiIiwic2lkZSI6ImJvdHRvbSJ9LHsiYWN0aW9uSUQiOiJjYWxlbmRh
-		ciIsImlkIjoiQTAxRTQ3MzctQzY2Ri00NzRBLUE0RjMtNjE3MkM5MUVENzQ2
-		IiwibGFiZWwiOiIiLCJzaWRlIjoiYm90dG9tIn0seyJhY3Rpb25JRCI6ImNv
-		bnRyb2wua2VlcEF3YWtlIiwiaWQiOiIzOEVEMTk1MS1BQkFELTQ4NzctODE1
-		Ni04MTBCRDZDNTU5MTkiLCJsYWJlbCI6IiIsInNpZGUiOiJyaWdodCJ9LHsi
-		YWN0aW9uSUQiOiJjb250cm9sLnNwZWVkVGVzdCIsImlkIjoiMDEzQ0I2MEIt
-		QTEyNC00NkZFLTg5QzQtOUY1RDM4OEM0MzU5IiwibGFiZWwiOiIiLCJzaWRl
-		IjoicmlnaHQifV0sInZlcnNpb24iOjF9
+		OiIiLCJzaWRlIjoibGVmdCJ9LHsiYWN0aW9uSUQiOiJzeXN0ZW0iLCJpZCI6
+		IkM2MTFEQTMyLUFDMDktNENGOC05QUFGLTAxQjI0MEZGNTIxOCIsImxhYmVs
+		IjoiIiwic2lkZSI6ImJvdHRvbSJ9LHsiYWN0aW9uSUQiOiJjYWxlbmRhciIs
+		ImlkIjoiQTAxRTQ3MzctQzY2Ri00NzRBLUE0RjMtNjE3MkM5MUVENzQ2Iiwi
+		bGFiZWwiOiIiLCJzaWRlIjoiYm90dG9tIn0seyJhY3Rpb25JRCI6ImNvbnRy
+		b2wua2VlcEF3YWtlIiwiaWQiOiIzOEVEMTk1MS1BQkFELTQ4NzctODE1Ni04
+		MTBCRDZDNTU5MTkiLCJsYWJlbCI6IiIsInNpZGUiOiJyaWdodCJ9LHsiYWN0
+		aW9uSUQiOiJjb250cm9sLnNwZWVkVGVzdCIsImlkIjoiMDEzQ0I2MEItQTEy
+		NC00NkZFLTg5QzQtOUY1RDM4OEM0MzU5IiwibGFiZWwiOiIiLCJzaWRlIjoi
+		cmlnaHQifV0sInZlcnNpb24iOjF9
 		</data>
 		<key>notchQuickPanel</key>
 		<true/>
@@ -979,7 +977,7 @@
 		<key>notchSilhouette</key>
 		<string>notch</string>
 		<key>notchSize</key>
-		<string>spacious</string>
+		<string>custom</string>
 		<key>notchTimerEnabled</key>
 		<true/>
 		<key>notchTimerMinutes</key>
@@ -1145,7 +1143,7 @@
 		<key>quickLauncherShortcut</key>
 		<string>control+command:9</string>
 		<key>quickLauncherShortcutEnabled</key>
-		<true/>
+		<false/>
 		<key>quitProtectionCloseDoubleIntervalMs</key>
 		<real>600</real>
 		<key>quitProtectionCloseEnabled</key>
@@ -1352,7 +1350,7 @@
 		<key>screenshotWatermarkPresets</key>
 		<string>[]</string>
 		<key>screenshotWatermarkStyle</key>
-		<string>{"opacity":0.4,"kind":"none","anchor":"bottomTrailing","color":"white","rotation":0,"text":"","size":0.3}</string>
+		<string>{"rotation":0,"color":"white","size":0.3,"opacity":0.4,"text":"","anchor":"bottomTrailing","kind":"none"}</string>
 		<key>scrollHorizontalEnabled</key>
 		<false/>
 		<key>scrollHorizontalModifier</key>
