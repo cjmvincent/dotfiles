@@ -137,6 +137,13 @@ if [ $(uname -s 2> /dev/null) = "Linux" ]; then
 	alias update="sudo apt-get update -y && sudo apt-get upgrade -y"
 fi
 
+# FZF SSH 
+fssh() {
+  local host
+  host=$(awk 'tolower($1)=="host" {for (i=2;i<=NF;i++) if ($i !~ /[*?]/) print $i}' ~/.ssh/config \
+         | fzf --prompt='ssh> ' --height=40% --reverse) && ssh "$host"
+}
+
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
