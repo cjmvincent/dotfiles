@@ -1,0 +1,95 @@
+# Taps
+tap "asmvik/formulae", trusted: true
+tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae", trusted: true
+tap "koekeishiya/formulae", "https://github.com/asmvik/homebrew-formulae.git", trusted: true
+tap "osx-cross/arm", trusted: true
+tap "osx-cross/avr", trusted: true
+tap "teamookla/speedtest", trusted: true
+
+
+# General formulae
+brew "mas"
+brew "openssh"
+brew "openssl"
+brew "coreutils"
+brew "moreutils"
+brew "gnu-sed"
+
+
+# Productivity utilities
+brew "asmvik/formulae/yabai"
+brew "borders"
+brew "asmvik/formulae/skhd"
+brew "findutils"
+brew "binutils"
+brew "dockutil"
+cask "hiddenbar"
+cask "keyclu"
+cask "vorssaint"
+
+
+# Terminal
+cask "font-space-mono-nerd-font"
+cask "font-hack-nerd-font"
+cask "font-symbols-only-nerd-font"
+brew "lsd"
+brew "bat"
+brew "fd"
+brew "fzf"
+brew "jq"
+cask "sf-symbols"
+brew "starship"
+brew "fastfetch"
+brew "tree"
+brew "curl"
+brew "wget"
+brew "grep"
+brew "btop"
+brew "yazi"
+brew "zoxide"
+brew "lazygit"
+
+
+# NetOps
+cask "docker"
+cask "cyberduck"
+cask "postman"
+cask "github"
+brew "tailscale"
+brew "nmap"
+brew "inetutils"
+brew "dnstracer"
+brew "ipcalc"
+brew "mtr"
+brew "teamookla/speedtest/speedtest", link: false
+brew "ipinfo-cli"
+brew "git"
+brew "gh"
+brew "ruby"
+brew "tmux"
+brew "pipx"
+brew "zsh-autozuggestions"
+brew "zsh-syntax-highlight"
+brew "neovim"
+brew "iperf"
+brew "iperf3"
+brew "lldpd"
+brew "openai/tools/tart", trusted: true
+cask "windows-app"
+
+# macOS apps
+cask "google-chrome"
+cask "discord"
+cask "handbrake-app"
+cask "yacreader"
+cask "microsoft-teams"
+cask "wireshark-app"
+cask "the-unarchiver"
+cask "caffeine"
+cask "synergy-core"
+cask "karabiner-elements"
+cask "visual-studio-code"
+cask "microsoft-office"
+cask "displaylink"
+cask "iterm2"
+cask "termius"

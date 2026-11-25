@@ -1,0 +1,31 @@
+{
+  "packages": [
+    "Microsoft.PowerShell",
+    "Git.Git",
+    "GitHub.cli",
+    "Microsoft.WindowsTerminal",
+    "Starship.Starship",
+    "sharkdp.fd",
+    "sharkdp.bat",
+    "JesseDuffield.lazygit",
+    "ajeetdsouza.zoxide",
+    "Microsoft.VisualStudioCode",
+    "Microsoft.PowerToys",
+    "7zip.7zip",
+    "Google.Chrome",
+    "Microsoft.Office",
+    "VideoLAN.VLC",
+    "Discord.Discord",
+    "Zoom.Zoom",
+    "angryziber.AngryIPScanner",
+    "WiresharkFoundation.Wireshark",
+    "Termius.Termius",
+    "WinSCP.WinSCP",
+    "Postman.Postman",
+    "Rufus.Rufus",
+    "TeamViewer.TeamViewer",
+    "Vivi.Vivi",
+    "QMK.QMKToolbox",
+    "Olivia.VIA"
+  ]
+}

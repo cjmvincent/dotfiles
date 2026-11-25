@@ -1,0 +1,17 @@
+---
+
+# Install with ansible-galaxy install -r ansible_requirements.yml
+
+collections:
+- ansible.netcommon
+- ansible.windows
+- arubanetworks.aos_switch
+- arubanetworks.aoscx
+- cisco.ios
+- community.general
+- community.vmware
+- community.windows
+- microsoft.ad
+- paloaltonetworks.panos
+- vmware.vmware
+- vmware.vmware_rest

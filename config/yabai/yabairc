@@ -1,0 +1,78 @@
+#!/usr/bin/env sh
+
+# ===== Loading Scripting Additions ============
+
+# Unload the macOS WindowManager process
+#launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist >/dev/null 2>&1 &
+
+# See: https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#macos-big-sur---automatically-load-scripting-addition-on-startup
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# ===== Tiling setting =========================
+
+## bsp or float (default: bsp)
+yabai -m config layout bsp
+
+## window things
+yabai -m config top_padding 5 \
+  config bottom_padding 5 \
+  config left_padding 7 \
+  config right_padding 7 \
+  config window_gap 10 \
+  config auto_balance off \
+  config split_ratio 0.50 \
+  config window_placement second_child \
+  config window_topmost off \
+  config window_shadow float \
+  config window_opacity off \
+  config window_border off
+
+## mouse things
+yabai -m config focus_follows_mouse on \
+  mouse_modifier alt \
+  mouse_action1 move \
+  mouse_action2 resize \
+  mouse_drop_action stack
+
+# ===== Window Management ==================================
+
+# ===== Rules ==================================
+
+## these are apps or dialogs I just don't want managed by yabai
+yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advanced)$" manage=off
+yabai -m rule --add app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Disk Utility$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^System Information$" manage=off
+yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
+yabai -m rule --add label="Software Update" title="Software Update" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+yabai -m rule --add label="App Store" app="^App Store$" manage=off
+yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
+yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
+yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
+yabai -m rule --add app="^iPhone Mirroring" manage=off
+yabai -m rule --add app="^Path Finder$" manage=off
+yabai -m rule --add app="^TextEdit$" manage=off
+yabai -m rule --add app="^GitHub Desktop$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+yabai -m rule --add app="^Windows App$" manage=off
+yabai -m rule --add app="^iTerm2$" manage=off
+yabai -m rule --add label="Select file to save to" app="^Inkscape$" title="Select file to save to" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+
+## these are apps I want to launch to specific displays and spaces
+## Note to self about grids: <rows>:<cols>:<start-x>:<start-y>:<width>:<height>
+#yabai -m rule --add app="Outlook" space=^1 grid="1:3:1:2:1:1"
+#yabai -m rule --add app="Teams" space=^1 grid="1:3:3:1:1:1"
+#yabai -m rule --add app="Outlook" space=^1 grid=1:4:0:0:3:1
+#yabai -m rule --add app="Microsoft Teams" space=^1 grid=1:4:3:0:1:1
+#yabai -m rule --add app="OneNote" space=^2
+#yabai -m rule --add app="Chrome" space=^3
+#yabai -m rule --add app="iTerm" space=^4
+#yabai -m rule --add app="Termius" space=^4
+
+set +x
+#END

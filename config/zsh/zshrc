@@ -1,0 +1,165 @@
+###############################################################################
+# Tmux                                                                        #
+###############################################################################
+if command -v tmux>/dev/null; then
+ [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux
+fi
+
+###############################################################################
+# Oh My Zsh                                                                   #
+###############################################################################
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+# update automatically without asking
+zstyle ':omz:update' mode auto
+
+COMPLETION_WAITING_DOTS="true"
+ENABLE_CORRECTION="true"
+
+plugins=(
+  fzf
+  git
+  zsh-autosuggestions
+  colored-man-pages
+  zsh-syntax-highlighting
+)
+
+source "$ZSH/oh-my-zsh.sh"
+
+###############################################################################
+# Aliases                                                                     #
+###############################################################################
+
+# Reload zsh
+alias reload-matrix="source ~/.zshrc"
+
+# Load my virtual environment for Ansible
+alias load-ansible="source $HOME/.venv/bin/activate"
+
+# LOL 
+alias pls='sudo'
+
+# Show current public IP information
+alias whatsmyip="curl https://ipinfo.io"
+
+# Test network speed with speediest-cli, but grep the stuff I actually want
+alias whatsmyspeed="speedtest --secure | grep 'Download\|Upload'"
+
+# Navigating directories
+alias cd=" cd"
+alias .=" cd ..; ls"
+alias ..=" cd ..; cd ..; ls"
+alias ...=" cd ..; cd ..;cd ..; ls"
+alias cd.="."
+alias cd..=".."
+alias cd...="..."
+alias x="exit"
+alias c="clear"
+
+# Git sliases
+alias gadd="git add"
+alias gcommit="git commit"
+alias gpull="git pull"
+alias gpush="git push"
+alias gstatus="git status"
+
+# Make ls do some convenient things
+alias ls='lsd -a'
+
+# Make cat be pretty
+if command -v bat >/dev/null; then
+  alias cat="bat"
+elif command -v batcat >/dev/null; then
+  alias cat="batcat"
+fi
+
+# Make grep pretty
+alias grep="grep --color=auto"
+
+# Confirm before overwriting files
+alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
+
+# Shortcuts for Docker
+alias dc="docker-compose"
+
+# Open working directory in vscode
+alias code="code ."
+
+# Shortcut for running Ansible playbooks as sudo
+alias sap="sudo ansible-playbook"
+alias ap="ansible-playbook"
+
+# Ping, but gotta go fash
+alias fastping='ping -c 4 -s 2'
+
+# Show LLDP neighhbor, requires lldpcli to be installed
+alias lldp="sudo lldpcli show neighbors"
+
+# Move between directories
+alias home="cd ~"
+alias dt="cd ~/Desktop"
+alias doc="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias dotfiles="cd ~/.dotfiles"
+alias apps="cd /Applications"
+alias netops="cd ~/ansible/"
+alias github="cd ~/Documents/GitHub"
+alias baymax="cd ~/baymax"
+
+# Packages update
+if [[ "$OSTYPE" == darwin* ]]; then
+  alias update="brew update && brew upgrade -y && ~/.local/share/dotfiles-venv/bin/pip install -U"
+else
+  alias update="sudo apt-get update -y && sudo apt-get upgrade -y"
+fi
+
+###############################################################################
+# Functions                                                                   #
+###############################################################################
+
+# FZF SSH 
+fssh() {
+  local host
+  host=$(awk 'tolower($1)=="host" {for (i=2;i<=NF;i++) if ($i !~ /[*?]/) print $i}' ~/.ssh/config \
+         | fzf --prompt='ssh> ' --height=40% --reverse) && ssh "$host"
+}
+
+(( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+if [ $(uname -s 2> /dev/null) = "Darwin" ]; then
+	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+###############################################################################
+# Prompt                                                                      #
+###############################################################################
+
+# Starship
+export STARSHIP_CONFIG="$HOME/.dotfiles/config/starship/starship.toml" 
+eval "$(starship init zsh)"
+
+# Yazi
+export YAZI_CONFIG_HOME="$HOME/.config/yazi"
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+# Created by `pipx` on 2026-10-12 23:24:23
+export PATH="$PATH:/Users/cvincent/.local/bin"
+
+###############################################################################
+# Novelty                                                                     #
+###############################################################################
+
+#cbonsai -s 7007 -c "{}" -b 1 -p

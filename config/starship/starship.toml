@@ -1,0 +1,97 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+# A minimal left prompt
+format = """ $directory[❯](black)[❯](yellow)[❯](red)[❯](green)[❯](purple)[❯](blue)$fill $git_branch$git_status$status$cmd_duration$time$line_break $character"""
+
+# move the rest of the prompt to the right
+# right_format = """ $character$git_branch$git_status$status$cmd_duration$time"""
+
+[fill]
+symbol = " "
+
+[username]
+show_always = true
+format = '[ $user]'
+
+[hostname]
+ssh_only = false
+format = '[@$ssh_symbol$hostname ]'
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)[❮](yellow)[❮](red)"
+
+[git_branch]
+symbol = ""
+format = '[ $symbol $branch]($style) '
+style = 'bold green'
+
+[git_status]
+format = '$all_status$ahead_behind '
+ahead = '[⬆](bold purple) '
+behind = '[⬇](bold purple) '
+staged = '[✚](green) '
+deleted = '[✖](red) '
+renamed = '[➜](purple) '
+stashed = '[✭](cyan) '
+untracked = '[◼](white) '
+modified = '[✱](blue) '
+conflicted = '[═](yellow) '
+diverged = '⇕ '
+up_to_date = ''
+
+[directory]
+style = "blue"
+truncation_length = 1
+truncation_symbol = "  "
+fish_style_pwd_dir_length = 1
+
+[directory.substitutions]
+"Desktop" = "  "
+"Documents" = " 󰈙 "
+"Downloads" = "  "
+"Music" = " 󰝚 "
+"Pictures" = "  "
+"Developer" = " 󰲋 " 
+
+[cmd_duration]
+format = '[$duration]($style) '
+
+[line_break]
+disabled = false
+
+[status]
+disabled = false
+symbol = '✘ '
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:white"
+format = '[   $time ]($style)'
+
+# Language Support
+[crystal]
+format = "🔮 "
+
+[golang]
+format = "🐭 "
+
+[java]
+format = "🍵 "
+
+[nodejs]
+format = "🍏 "
+detect_folders = [""]
+
+[php]
+format = "🐘 "
+
+[python]
+format = '🐍 [${pyenv_prefix}(${version})(\($virtualenv\))](bold fg:yellow)'
+
+[rust]
+format = "🦀 "

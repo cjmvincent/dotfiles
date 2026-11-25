@@ -1,0 +1,45 @@
+- clean:
+    ~/:
+        force: true
+        recursive: true
+    ~/.config:
+        force: true
+        recursive: true
+- defaults:
+    link:
+        relink: true
+        create: true
+        force: true
+- link:
+    ~/.bash_profile: bash_profile
+    ~/.gitconfig: gitconfig
+    ~/.config/borders:
+        path: config/borders
+    ~/.config/btop:
+        path: config/btop
+    ~/.config/fastfetch:
+        path: config/fastfetch
+    ~/.config/git:
+        path: config/git
+    ~/.config/karabiner:
+        path: config/karabiner
+    ~/.config/lsd:
+        path: config/lsd
+    ~/.config/nano:
+        path: config/nano
+    ~/.config/nvim:
+        path: config/nvim
+    ~/.config/sketchybar:
+        path: config/sketchybar
+    ~/.config/skhd:
+        path: config/skhd
+    ~/.config/starship:
+        path: config/starship
+    ~/.config/tmux:
+        path: config/tmux
+    ~/.config/yabai:
+        path: config/yabai
+    ~/.config/yazi:
+        path: config/yazi 
+    ~/.config/zsh:
+        path: config/zsh

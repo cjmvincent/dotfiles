@@ -1,0 +1,71 @@
+#!/usr/bin/env sh
+
+#SKHD STUFF
+
+## HYPER == SHIFT + CMD + ALT + OPTION
+
+# ===== Launching stuff ===============
+## Master workflow for work
+hyper - c : sh ~/.config/skhd/login.sh
+## Open iTerm2
+hyper - t : open -a "/Applications/iTerm.app"
+## Open Launchpad
+hyper - l : open "/System/Applications/Launchpad.app"
+## Open Mission Control
+hyper - m : open "/System/Applications/Mission Control.app"
+## Open new Finder window
+hyper - f : open -R "$HOME/Documents"
+## Toggle Dock
+hyper - d: osascript -e 'tell application "System Events" to keystroke "d" using {command down, option down}'
+
+
+# ===== Yabai =========================
+## Maximize window size
+lalt - f : yabai -m window --toggle zoom-fullscreen
+
+# Float / Unfloat window and center on screen
+lalt - space : yabai -m window --toggle float \
+               yabai -m window --grid 4:4:1:1:2:2
+
+# Equalize size of windows: ctrl + lalt - e
+lalt - e : yabai -m space --balance
+
+# Window Navigation (through display borders): lalt - {h, j, k, l}
+lalt - h    : yabai -m window --focus west  || yabai -m display --focus west
+lalt - j    : yabai -m window --focus south || yabai -m display --focus south
+lalt - k    : yabai -m window --focus north || yabai -m display --focus north
+lalt - l    : yabai -m window --focus east  || yabai -m display --focus east
+
+# Rotate on X and Y Axis
+shift + lalt - x : yabai -m space --mirror x-axis
+shift + lalt - y : yabai -m space --mirror y-axis
+
+# Resize windows, increase
+shift + lalt - k : yabai -m window --resize top:0:-20
+shift + lalt - h : yabai -m window --resize left:-20:0
+
+# Resize windows, decrease
+shift + lalt - j : yabai -m window --resize bottom:0:-20
+shift + lalt - l : yabai -m window --resize right0:20
+
+# Focus previous space by mission-control index
+hyper - q : yabai -m space --focus prev
+
+# Focus next space by mission-control index
+hyper - w : yabai -m space --focus next
+
+# Moves focus between spaces 
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+
+# Send window to a space 
+shift + cmd - 1 : yabai -m window --space  1 && yabai -m space --focus 1
+shift + cmd - 2 : yabai -m window --space  2 && yabai -m space --focus 2
+shift + cmd - 3 : yabai -m window --space  3 && yabai -m space --focus 3
+shift + cmd - 4 : yabai -m window --space  4 && yabai -m space --focus 4
+shift + cmd - 5 : yabai -m window --space  5 && yabai -m space --focus 5
+shift + cmd - 6 : yabai -m window --space  6 && yabai -m space --focus 6

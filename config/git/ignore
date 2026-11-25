@@ -1,0 +1,21 @@
+# OS clutter
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Editors
+*.swp
+*.swo
+*.bak
+.idea/
+.vscode/
+
+# Languages
+node_modules/
+__pycache__/
+*.pyc
+
+# Local environment and secrets
+.envrc
+.env
