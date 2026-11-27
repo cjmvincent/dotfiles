@@ -91,10 +91,16 @@ case "$OS" in
       echo
       echo "Installing homebrew packages --file=$REQS/macos/Brewfile"
       echo
-      brew bundle --file="$REQS/macos/Brewfile"
-      echo
-      echo "Finished installing Homebrew packages"
-      echo
+      if ! brew bundle --file="$REQS/macos/Brewfile"; then
+        echo
+        echo "WARNING: some Homebrew packages failed to install (see errors above)."
+        echo "Continuing setup. To see what's missing, run: brew bundle check --verbose --file=\"$REQS/macos/Brewfile\""
+        echo
+      else
+        echo
+        echo "Finished installing Homebrew packages"
+        echo
+      fi
     else
       echo
       echo "Skipping: Homebrew packages ($REQS/macos/Brewfile not found)"
